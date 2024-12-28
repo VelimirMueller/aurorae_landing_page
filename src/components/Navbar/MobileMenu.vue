@@ -1,5 +1,5 @@
 <template>
-  <!-- mobile menu -->
+  <!-- Mobile menu -->
   <div class="text-center d-lg-none">
     <v-menu>
       <template #activator="{ props }">
@@ -13,13 +13,21 @@
         </v-btn>
       </template>
 
-      
+      <!-- Side Menu with navigation links -->
       <div class="d-flex d-lg-none flex-column ga-12 px-16 bg-darkest">
-        <h2>Navigation</h2>
+        <h2 class="text-center">Navigation</h2>
         <v-btn class="link" size="x-large">Link 1</v-btn>
         <v-btn class="link" size="x-large">Link 2</v-btn>
         <v-btn class="link" size="x-large">Link 3</v-btn>
         <v-btn class="link" size="x-large">Link 4</v-btn>
+        <div class="d-flex align-center h-100">
+          <a class="mt-auto w-100" href="/">
+            <img
+              class="w-100"
+              src="../../assets/Logo.svg" 
+              alt="Anwendugslogo">
+          </a>
+        </div>
       </div>
     </v-menu>
   </div>
@@ -48,12 +56,15 @@ h2 {
     border-radius: 15px;
     transition: all 0.35s ease-in-out;
     font-size: 1.25rem;
-    border: solid 3px #087A8E;
+    background-color: transparent;
 
     &:hover {
       color: #ff39d4;
       text-decoration: underline;
-      border: solid 3px #ff39d4;
     }
+  }
+
+  .img-nav {
+    align-self: flex-end
   }
 </style>
