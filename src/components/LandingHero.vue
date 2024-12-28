@@ -1,9 +1,9 @@
 <template>
   <div class="d-flex justify-center text-center dots">
-    <div class="w-50 mt-12">
+    <div class="wrapper mt-12">
       <h1 v-text="'EXPLORE BUSINESS OPPORTUNITIES WITH AI WEB DEVELOPEMNT'" />
       <div class="w-20">
-        <h2 class="padding mt-4 text-center">
+        <h2 class="padding mt-4">
           Unleash your business 
           <span class="text-blueish">potential</span> with AI <span class="text-blueish">power</span>. 
           Upgrade your <span class="text-blueish">productivity</span> with AI<br>
@@ -22,6 +22,10 @@
 </template>
 
 <style lang="scss" scoped>
+  .wrapper {
+    width: 50%
+  }
+
   h1 {
     color: #1A012C;
     font-size: 4.75rem;
@@ -33,6 +37,29 @@
     font-size: 2.75rem;
     padding: 0 110px;
     line-height: normal;
+    text-align: center;
+  }
+
+  @media screen and (max-width:970px) {
+    .hero-img, .wrapper {
+      width: 100%;
+      padding: 5px;
+    }
+
+    h1 {
+      font-size: 2.75rem;
+      text-align: left;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      padding: 0 0;
+      text-align: left;
+    }
+
+    .hero-img {
+      width: 90%;
+    }
   }
 
   .text-blueish {
