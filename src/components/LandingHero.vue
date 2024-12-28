@@ -6,7 +6,7 @@
         <h2 class="padding mt-4">
           Unleash your business 
           <span class="text-blueish">potential</span> with AI <span class="text-blueish">power</span>. 
-          Upgrade your <span class="text-blueish">productivity</span> with AI<br>
+          Upgrade your <span class="text-blueish">productivity</span> with AI
           <span class="text-blueish">empowered</span> tooling.
         </h2>
       </div>
@@ -40,6 +40,13 @@
     text-align: center;
   }
 
+  @media screen and (min-width:971px) and (max-width: 1200px) {
+    .hero-img, .wrapper {
+      width: 80%;
+      padding: 5px;
+    }
+  }
+
   @media screen and (max-width:970px) {
     .hero-img, .wrapper {
       width: 100%;
@@ -47,12 +54,12 @@
     }
 
     h1 {
-      font-size: 2.75rem;
+      font-size: 3.25rem;
       text-align: left;
     }
 
     h2 {
-      font-size: 1.5rem;
+      font-size: 2.1rem;
       padding: 0 0;
       text-align: left;
     }
