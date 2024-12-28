@@ -6,7 +6,7 @@
     <!-- Logo und Titel -->
     <v-row 
       align="center" 
-      class="ml-12 pt-2 d-none d-sm-flex">
+      class="ml-4 pt-2 d-none d-sm-flex">
       <a href="/">
         <img 
           src="../assets/Logo.svg" 
