@@ -20,26 +20,15 @@
       class="d-flex justify-center" 
       fluid>
       <div class="d-none d-lg-flex justify-center ml-12">
-        <a href="">
-          <v-btn
-            text="Nav1" 
-            class="mr-8 ml-16 link" />
-        </a>
-        <a href="">
-          <v-btn
-            text="Nav2" 
-            class="mx-8 link" />
-        </a>
-        <a href="">
-          <v-btn 
-            text="Nav3" 
-            class="mx-8 link" />
-        </a>
-        <a href="">
-          <v-btn 
-            text="Nav4" 
-            class="mx-8 link" />
-        </a>
+        <template 
+          v-for="(link, idx) in links" 
+          :key="`${link.href}-${idx}`">
+          <a :href="link.href">
+            <v-btn
+              :text="`${link.label}`" 
+              class="mr-8 ml-16 link" />
+          </a>
+        </template>
       </div>
     </v-container>
     <v-spacer />
@@ -52,9 +41,22 @@
       class="border-custom mr-4 link"
       text="sign in" />
 
-    <MobileMenu />
+    <MobileMenu :links="links" />
   </v-app-bar>
 </template>
+
+<script setup lang="ts">
+type LinkElement = {
+  href: string, 
+  label: string
+}
+const links: LinkElement[] = [
+  { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
+  { href: '/pricing', label: 'Pricing' },
+  { href: '/products', label: 'Products' }
+]
+</script>
 
 <style lang="scss" scoped>
   .mobile-menu-wrapper {
