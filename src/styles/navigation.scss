@@ -1,0 +1,11 @@
+.link {
+  background-color: transparent;
+  transition: all 0.35s ease-in-out;
+  font-size: 1.25rem;
+  color: rgb(var(--v-theme-textLight));
+
+  &:hover {
+    color: rgb(var(--v-theme-accent));
+    text-decoration: underline;
+  }
+}

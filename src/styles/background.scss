@@ -1,0 +1,14 @@
+.bg-dark {
+  background-color: rgb(var(--v-theme-primary));
+}
+
+.bg-light {
+  background-color: #fff;
+}
+
+.dots {
+  background-image: radial-gradient(#19191a4f 2px, transparent 0px);
+  background-repeat: repeat; /* or omit this declaration */
+  background-size: 130px 150px;
+  background-position: center;
+}

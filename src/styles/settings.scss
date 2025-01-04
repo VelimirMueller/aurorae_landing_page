@@ -8,3 +8,9 @@
 // @use 'vuetify/settings' with (
 //   $color-pack: false
 // );
+
+@import './background.scss';
+@import './layout.scss';
+@import './navigation.scss';
+@import './text.scss';
+@import './button.scss';
