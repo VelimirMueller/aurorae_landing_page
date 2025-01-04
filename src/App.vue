@@ -12,7 +12,12 @@
 
 <style>
 * {
-  font-family: "Jersey 10", serif;
+  font-family: "Fira Sans", serif;
+  font-weight: 500;
   font-style: normal;
+}
+
+body {
+  max-width: 100vw;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <v-app-bar
     app  
-    color="#1A012C"
+    color="primary"
     collapse-on-scroll>
     <!-- Logo und Titel -->
     <v-row 
@@ -15,10 +15,8 @@
     </v-row>
 
     <!-- Navigationselemente -->
-    <v-spacer />
-    <v-container
-      class="d-flex justify-center" 
-      fluid>
+    <v-spacer class="d-none d-md-block" />
+    <v-container class="d-flex justify-center link-container">
       <div class="d-none d-lg-flex justify-center ml-12">
         <template 
           v-for="(link, idx) in links" 
@@ -31,16 +29,15 @@
         </template>
       </div>
     </v-container>
-    <v-spacer />
+    <v-spacer class="d-none d-md-block" />
 
     <!-- Rechtsausgerichtete Elemente -->
     <v-btn
       text="New Account" 
-      class="mx-3 link" />
+      class="link" />
     <v-btn 
-      class="border-custom mr-4 link"
+      class="mr-4 btn-outline-highlight"
       text="sign in" />
-
     <MobileMenu :links="links" />
   </v-app-bar>
 </template>
@@ -52,50 +49,21 @@ type LinkElement = {
 }
 const links: LinkElement[] = [
   { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Contact' },
   { href: '/pricing', label: 'Pricing' },
-  { href: '/products', label: 'Products' }
+  { href: '/products', label: 'Products' },
+  { href: '/contact', label: 'Contact' }
 ]
 </script>
 
 <style lang="scss" scoped>
-  .mobile-menu-wrapper {
-    background-color: #1A012C;
+  .btn-outline-highlight {
+    color: #fff;
+    width: 90px;
   }
 
-  .link {
-    color: #858585;
-    transition: all 0.35s ease-in-out;
-    font-size: 1.25rem;
-
-    &:hover {
-      color: #ff39d4;
-      text-decoration: underline;
+  @media screen and (max-width: 1200px) {
+    .link-container {
+      padding: 0;
     }
   }
-
-  .w-vw {
-    width: 100vw;
-    position: absolute;
-  }
-
-  .border-custom {
-      text-shadow: -1px -1px 0 #0cd0f3, 1px -1px 0 #0cd0f3, -1px 1px 0 #0cd0f3, 1px 1px 0 #0cd0f3;
-      color: #fff;
-      border: solid 4px #087A8E;
-      border-color: #087A8E !important;
-      border-radius: 15px;
-      width: 145px;
-      padding: 5px;
-
-      &:hover {
-        text-shadow: -1px -1px 0 #60054c, 1px -1px 0 #60054c, -1px 1px 0 #60054c, 1px 1px 0 #60054c;
-        border-color: #60054c !important;
-        color: #ff39d4;
-      }
-
-      &:active {
-        outline: solid 4px #ff39d4aa
-      }
-    }
 </style>

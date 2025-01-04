@@ -7,8 +7,9 @@
         <AppNavBar />
       </nav>
       <div class="app__wrapper--content">
-        <div class="relative">
+        <div>
           <router-view />
+          <AppFooter />
         </div>
       </div>
     </v-main>
@@ -21,6 +22,5 @@
     height: 100%;
     padding: 0 10px;
     background-color: none;
-    position: absolute;
   }
 </style>

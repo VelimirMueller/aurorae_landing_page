@@ -5,6 +5,7 @@
       <template #activator="{ props }">
         <v-btn color="secondary">
           <v-icon
+            class="pr-4"
             color="white"
             size="42"
             v-bind="props">
@@ -14,23 +15,19 @@
       </template>
 
       <!-- Side Menu with navigation links -->
-      <div class="d-flex d-lg-none flex-column ga-12 px-16 bg-darkest">
-        <h2 class="text-center">
-          Navigation
-        </h2>
+      <div class="d-flex d-lg-none flex-column ga-8 px-14 py-12 bg-dark">
         <template 
-          v-for="link in props.links"
+          v-for="link in links"
           :key="link.href">
-          <a :href="link.href">
-            <v-btn 
-              class="link" 
-              size="x-large">
-              {{ link.label }}
-            </v-btn>
-          </a>
+          <v-btn
+            :href="link.href"
+            class="link mt-4" 
+            size="x-large">
+            {{ link.label }}
+          </v-btn>
         </template>
         
-        <div class="d-flex align-center h-100">
+        <div class="d-flex align-center h-100 w-60">
           <a
             class="mt-auto w-100"
             href="/">
@@ -54,7 +51,7 @@ type LinkElement = {
   label: string
 }
 
-const props = defineProps({
+defineProps({
   links: {
     type: Array as PropType<LinkElement[]>,
     required: false,
@@ -64,38 +61,13 @@ const props = defineProps({
 </script>
 
 <style lang="scss" scoped>
-.bg-darkest {
-  background-color: #1A012C;
-  height: 100vh;
-  transform: translate(10px, -15px);
-}
-
-h2 {
-  font-size: 4rem;
-}
-
-.v-overlay__content {
-  position: relative;
-  display: block;
-  width: 70vw;
-  height: 100vh;
+.bg-dark {
+  transform: translate(10px, -5px);
+  width: 230px;
 }
 
 .link {
-    width: 100%;
-    color: #858585;
-    border-radius: 15px;
-    transition: all 0.35s ease-in-out;
-    font-size: 1.25rem;
-    background-color: transparent;
-
-    &:hover {
-      color: #ff39d4;
-      text-decoration: underline;
-    }
-  }
-
-  .img-nav {
-    align-self: flex-end
-  }
+  width: 100%;
+  font-size: 1.5rem;
+}
 </style>
