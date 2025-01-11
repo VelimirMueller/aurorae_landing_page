@@ -15,7 +15,7 @@
       </template>
 
       <!-- Side Menu with navigation links -->
-      <div class="d-flex d-lg-none flex-column ga-8 px-14 py-12 bg-dark">
+      <div class="d-flex d-lg-none flex-column ga-8 px-14 py-12 bg-primary">
         <template 
           v-for="link in links"
           :key="link.href">
@@ -33,7 +33,7 @@
             href="/">
             <img
               class="w-100"
-              src="../../assets/Logo.svg" 
+              src="../../assets/Logo.webp" 
               alt="Anwendugslogo">
           </a>
         </div>
@@ -61,11 +61,6 @@ defineProps({
 </script>
 
 <style lang="scss" scoped>
-.bg-dark {
-  transform: translate(10px, -5px);
-  width: 230px;
-}
-
 .link {
   width: 100%;
   font-size: 1.5rem;

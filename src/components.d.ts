@@ -7,15 +7,16 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    AppFooter: typeof import('./components/AppFooter.vue')['default']
-    AppNavBar: typeof import('./components/AppNavBar.vue')['default']
-    HelloWorld: typeof import('./components/HelloWorld.vue')['default']
-    LandingCards: typeof import('./components/LandingCards.vue')['default']
-    LandingHero: typeof import('./components/LandingHero.vue')['default']
-    LargeScreenMenu: typeof import('./components/Navbar/LargeScreenMenu.vue')['default']
-    LargeScrenMenu: typeof import('./components/Navbar/LargeScreenMenu.vue')['default']
+    AppFooter: typeof import('./components/layout/AppFooter.vue')['default']
+    AppNavBar: typeof import('./components/layout/AppNavBar.vue')['default']
+    ButtonRow: typeof import('./components/ButtonRow.vue')['default']
+    LandingCards: typeof import('./components/pages/landing/LandingCards.vue')['default']
+    LandingFeature: typeof import('./components/pages/landing/LandingFeature.vue')['default']
+    LandingFeatureLeft: typeof import('./components/pages/landing/LandingFeature/LandingFeatureLeft.vue')['default']
+    LandingFeatureRight: typeof import('./components/pages/landing/LandingFeature/LandingFeatureRight.vue')['default']
+    LandingHero: typeof import('./components/pages/landing/LandingHero.vue')['default']
     LogoLine: typeof import('./components/LogoLine.vue')['default']
-    MobileMenu: typeof import('./components/Navbar/MobileMenu.vue')['default']
+    MobileMenu: typeof import('./components/layout/MobileMenu.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

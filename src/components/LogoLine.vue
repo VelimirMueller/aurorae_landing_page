@@ -1,23 +1,27 @@
 <template>
-  <div class="d-flex height-100 pa-4">
+  <div class="d-flex h-100 pa-4 pa-md-8 pt-md-12">
     <template 
-      v-for="(feature, idx) in features" 
-      :key="`${feature}-${idx}`">
+      v-for="feature in features" 
+      :key="feature.id">
       <div class="w-100 d-flex justify-center align-center">
         <v-icon 
           class="icon"
-          color="secondary-light"
+          color="textDark"
           size="x-large">
-          mdi-robot-happy-outline
+          {{ feature.icon }}
         </v-icon>
-        <p>{{ feature }}</p>
+        <p>{{ feature.text }}</p>
       </div>
     </template>
   </div>
 </template>
 
 <script setup lang="ts">
-  const features: string[] = ['CHAT', 'IMAGES', 'DATA']
+  const features: {id: number, text: string, icon: string}[] = [
+    {id: 0, text: 'CHAT', icon: 'mdi-chat-processing-outline'}, 
+    {id: 1, text: 'IMAGES', icon: 'mdi-image-multiple-outline'},
+    {id: 2, text: 'DATA', icon: 'mdi-arrow-top-right-bold-box-outline'}
+  ]
 </script>
 
 <style scoped lang="scss">
@@ -25,13 +29,22 @@
     transform: scale(2);
     margin: 5px 0;
     position: absolute;
+    opacity: 90%;
   }
 
   p {
     color: rgb(var(--v-theme-textLight));
     font-size: 2rem;
     font-weight: 400;
+    width: 100%;
     height: 110px;
+    padding: 10px;
+    margin: 5px;
+    border-left: solid 2px white;
+    border-right: solid 2px white;
+    border-radius: 25px;
+    stroke: solid 1px white;
+    animation: anim 5s infinite;
   }
 
   @media screen and (max-width: 1200px) {

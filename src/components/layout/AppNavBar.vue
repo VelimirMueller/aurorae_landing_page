@@ -7,9 +7,11 @@
     <v-row 
       align="center" 
       class="ml-4 pt-2 d-none d-sm-flex">
-      <a href="/">
+      <a 
+        href="/" 
+        class="position-absolute">
         <img 
-          src="../assets/Logo.svg" 
+          src="../../assets/Logo.svg" 
           alt="Anwendugslogo">
       </a>
     </v-row>

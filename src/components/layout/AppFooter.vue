@@ -1,6 +1,8 @@
 <template>
   <v-footer class="bg-primary h-100">
-    <v-row justify="center" no-gutters>
+    <v-row
+      justify="center"
+      no-gutters>
       <v-btn
         v-for="link in links"
         :key="link"
