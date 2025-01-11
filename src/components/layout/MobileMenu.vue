@@ -5,7 +5,7 @@
       <template #activator="{ props }">
         <v-btn color="secondary">
           <v-icon
-            class="pr-4"
+            class="pr-4 icon"
             color="white"
             size="42"
             v-bind="props">

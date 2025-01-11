@@ -4,7 +4,7 @@
     class="d-flex justify-start mt-8">
     <span class="d-flex ml-lg-auto">
       <v-icon 
-        class="w-30 pt-2"
+        class="w-30 pt-2 icon"
         size="x-large"
         color="accent">
         mdi-checkbox-marked-circle-auto-outline
@@ -20,7 +20,7 @@
     class="d-flex justify-start">
     <span class="d-flex ml-lg-auto">
       <v-icon 
-        class="w-30 pt-2"
+        class="w-30 pt-2 icon"
         size="x-large"
         color="accent">
         mdi-checkbox-marked-circle-auto-outline
@@ -36,7 +36,7 @@
     class="d-flex justify-start">
     <span class="d-flex ml-lg-auto">
       <v-icon 
-        class="w-30 pt-2"
+        class="w-30 pt-2 icon"
         size="x-large"
         color="accent">
         mdi-checkbox-marked-circle-auto-outline

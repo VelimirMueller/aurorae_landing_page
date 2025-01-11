@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white min-h-100 d-flex align-itmes">
+  <section class="bg-white min-h d-flex align-itmes dots">
     <v-row>
       <v-col 
         cols="12" 
@@ -43,7 +43,7 @@
 </template>
 
 <style scoped>
-.min-h-100 {
+.min-h {
   min-height: 90vh;
 }
 </style>

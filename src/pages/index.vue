@@ -3,11 +3,15 @@
     <LandingHero class="pb-14" />
   </section>
 
-  <section id="logoline" class="bg-primary">
+  <section
+    id="logoline"
+    class="bg-primary">
     <LogoLine />
   </section>
 
-  <section id="cards" class="bg-white pt-md-12 px-md-12">
+  <section
+    id="cards"
+    class="bg-white pt-md-12 px-md-12">
     <h2 class="text-textDark mb-md-12 pt-md-12 text-h3 text-md-h3 text-lg-h2 text-md-center py-12 py-md-12 px-4">
       Better<span class="text-secondary"> AI </span>Experience with<span class="text-secondary"> Aurorae </span>
     </h2>
@@ -46,7 +50,10 @@
 
   <section class="bg-white py-12 pa-md-0 my-12">
     <v-row class="pa-0">
-      <v-col cols="12" md="6" class="my-auto">
+      <v-col
+        cols="12"
+        md="6"
+        class="my-auto icon">
         <h4 class="text-left text-sm-center text-sm-h4 text-h4 px-2 mb-12">
           Awesome <span class="highlight-text">Chat</span> Integration
         </h4>
@@ -183,8 +190,14 @@
         </template>
       </v-col>
 
-      <v-col cols="12" lg="6">
-        <img src="../assets/dashboard.webp" class="w-100" alt="" lazy>
+      <v-col
+        cols="12"
+        lg="6">
+        <img
+          src="../assets/dashboard.webp"
+          class="w-100"
+          alt=""
+          lazy>
       </v-col>
 
       <ButtonRow 
@@ -202,8 +215,14 @@
 
     <div class="d-flex justify-center align-center h-100">
       <v-row>
-        <v-col cols="12" lg="6">
-          <img src="../assets/aimodel.webp" class="w-100" alt="" lazy>
+        <v-col
+          cols="12"
+          lg="6">
+          <img
+            src="../assets/aimodel.webp"
+            class="w-100"
+            alt=""
+            lazy>
         </v-col>
 
         <v-col 

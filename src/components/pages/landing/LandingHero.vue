@@ -18,7 +18,7 @@
         <v-icon
           color="secondary"
           size="x-small"
-          class="mb-2">
+          class="mb-2 icon">
           mdi-gesture-double-tap
         </v-icon>
       </button>

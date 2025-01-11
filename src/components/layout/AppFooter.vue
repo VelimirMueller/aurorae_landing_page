@@ -6,7 +6,7 @@
       <v-btn
         v-for="link in links"
         :key="link"
-        href="link"
+        :href="link"
         class="mx-2 link"
         rounded="xl"
         variant="text">
