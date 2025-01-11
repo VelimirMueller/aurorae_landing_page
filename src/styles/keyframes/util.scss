@@ -64,3 +64,14 @@
     background-position: right top;
   }   
 }
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(1px, -3px);
+  }
+}
