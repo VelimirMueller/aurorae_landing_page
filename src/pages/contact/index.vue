@@ -1,5 +1,7 @@
 <template>
-  <h1 class="headline">test</h1>
+  <h1 class="headline">
+    test
+  </h1>
 </template>
 
 <style scoped>
