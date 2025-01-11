@@ -1,0 +1,66 @@
+@keyframes blink {
+    0%,
+    100% {
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      opacity: 100%;
+      border-color: rgb(var(--v-theme-secondary));
+    }
+
+    50% {
+      opacity: 10%
+    }
+
+    70% {
+      opacity: 40%;
+      border-color: rgb(var(--v-theme-info));
+    }
+
+    90% {
+      opacity: 85%;
+    }
+  }
+
+  @keyframes anim {
+	0%,
+	100% {
+    border-top: none;
+    border-bottom: none;
+    border-color: rgb(var(--v-theme-info));
+    color: rgb(var(--v-theme-primary));
+	}
+
+  25% {
+    border-color: rgb(var(v--theme-success));
+  }
+
+	50% {
+    border-color: rgb(var(--v-theme-primary));
+    color: rgb(var(--v-theme-secondary));
+	}
+
+  80% {
+    border-color: rgb(var(--v-theme-accent));
+    color: rgb(var(--v-theme-info));
+  }
+
+  90% {
+    color: rgb(var(--v-theme-secondary));
+  }
+}
+
+@keyframes animateText {
+  0%, 100% {
+    background-position: left top;
+  }
+  25%{
+    background-position: right bottom;
+    }
+  50% {
+    background-position: left bottom;
+  }
+  75% {
+    background-position: right top;
+  }   
+}
