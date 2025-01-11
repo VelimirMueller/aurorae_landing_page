@@ -28,7 +28,8 @@ export default createVuetify({
           success: '#22CA68',
           warning: '#FFCA58',
           textDark: '#3c3c3c',
-          textLight: '#D9D9D9'
+          textLight: '#D9D9D9',
+          white: '#fff'
         },
       },
     }
