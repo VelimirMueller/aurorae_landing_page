@@ -1,21 +1,12 @@
 <template>
-  <section class="bg-white min-h d-flex align-itmes dots">
-    <v-row>
+  <section class="bg-white min-h d-flex dots">
+    <BackgroundLogo />
+    <v-row class="d-flex align-start justify-center">
       <v-col 
-        cols="12" 
-        md="5"
-        l="4"
-        xl="4"
-        class="pa-12 d-lg-flex d-none align-center">
-        <img 
-          class="w-100"
-          src="../../assets/about_hero_image.webp" 
-          alt="">
-      </v-col>
-
-      <v-col class="d-flex align-center">
-        <article class="text-h6 pa-8 pa-md-12">
-          <h1 class="text-h2 text-sm-h1 text-center pt-12 font-weight-bold">
+        cols="12"
+        md="8">
+        <article class="text-h6 pa-2 pa-sm-8 pa-md-8 pb-12">
+          <h1 class="text-h2 text-sm-h1 text-center pt-8 font-weight-bold">
             About Aurorae
           </h1>
 

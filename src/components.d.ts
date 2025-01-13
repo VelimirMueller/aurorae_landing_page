@@ -9,7 +9,9 @@ declare module 'vue' {
   export interface GlobalComponents {
     AppFooter: typeof import('./components/layout/AppFooter.vue')['default']
     AppNavBar: typeof import('./components/layout/AppNavBar.vue')['default']
+    BackgroundLogo: typeof import('./components/BackgroundLogo.vue')['default']
     ButtonRow: typeof import('./components/ButtonRow.vue')['default']
+    ChipLabel: typeof import('./components/ChipLabel.vue')['default']
     LandingCards: typeof import('./components/pages/landing/LandingCards.vue')['default']
     LandingFeature: typeof import('./components/pages/landing/LandingFeature.vue')['default']
     LandingFeatureLeft: typeof import('./components/pages/landing/LandingFeature/LandingFeatureLeft.vue')['default']

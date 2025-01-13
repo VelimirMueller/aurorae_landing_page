@@ -1,0 +1,27 @@
+@keyframes flyInLeft {
+    0% {
+     transform: translate(25%, -50%);
+    }
+   
+    100% {
+     transform: translateX(0, 0);
+    }
+   }
+   
+   @keyframes flyInRight {
+    0% {
+     transform: translate(-25%, -50%);
+    }
+   
+    100% {
+     transform: translateX(0, 0);
+    }
+}
+
+.fly-in-right {
+    animation: flyInLeft 0.75s cubic-bezier(0.215, 0.610, 0.355, 1);
+  }
+  
+  .fly-in-left {
+    animation: flyInRight 0.75s cubic-bezier(0.215, 0.610, 0.355, 1);
+  }

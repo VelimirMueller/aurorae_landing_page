@@ -1,4 +1,5 @@
 <template>
+  <BackgroundLogo />
   <div class="d-flex justify-center text-center dots">
     <div class="w-100 w-md-75 w.lg-66 mt-6 mt-md-12">
       <h1 class="px-2 px-sm-4 text-h3 text-left text-md-center text-sm-h3 text-md-h2 text-lg-h1 text-primary">

@@ -325,34 +325,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-@keyframes flyInLeft {
- 0% {
-  transform: translate(25%, -50%);
- }
-
- 100% {
-  transform: translateX(0, 0);
- }
-}
-
-@keyframes flyInRight {
- 0% {
-  transform: translate(-25%, -50%);
- }
-
- 100% {
-  transform: translateX(0, 0);
- }
-}
-
-.fly-in-right {
-  animation: flyInLeft 0.75s cubic-bezier(0.215, 0.610, 0.355, 1);
-}
-
-.fly-in-left {
-  animation: flyInRight 0.75s cubic-bezier(0.215, 0.610, 0.355, 1);
-}
-
 .highlight-text {
   color: rgb(var(--v-theme-secondary))
 }
@@ -362,16 +334,7 @@ section {
 }
 
 .text-container {
-  margin: 0;
-  color: rgba(225,225,225, .01);
   background-image: url("../assets/gradient-dark.webp");
-  background-repeat: repeat;
-  background-clip: text;
-  -webkit-background-clip: text;
-  animation: animateText 15s ease-in-out infinite;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 900;
 }
 
 .scale {

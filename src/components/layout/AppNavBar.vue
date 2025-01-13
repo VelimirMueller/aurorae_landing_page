@@ -52,8 +52,7 @@ type LinkElement = {
 const links: LinkElement[] = [
   { href: '/about', label: 'About' },
   { href: '/pricing', label: 'Pricing' },
-  { href: '/products', label: 'Products' },
-  { href: '/contact', label: 'Contact' }
+  { href: '/products', label: 'Products' }
 ]
 </script>
 
