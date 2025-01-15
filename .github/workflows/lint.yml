@@ -1,0 +1,32 @@
+name: Lint Code
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 'lts/*'
+
+      # Install dependencies
+      - name: Install Dependencies
+        run: npm install --legacy-peer-deps
+
+      # Run the linter
+      - name: Run ESLint
+        run: npx eslint . --ext .js,.jsx,.ts,.tsx
