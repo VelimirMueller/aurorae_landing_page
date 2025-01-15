@@ -20,7 +20,8 @@
 const links = [
   '/about',
   '/products',
-  '/pricing'
+  '/pricing',
+  '/wiki'
 ]
 </script>
 

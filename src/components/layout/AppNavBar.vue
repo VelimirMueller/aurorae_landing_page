@@ -19,7 +19,7 @@
     <!-- Navigationselemente -->
     <v-spacer class="d-none d-md-block" />
     <v-container class="d-flex justify-center link-container">
-      <div class="d-none d-lg-flex justify-center ml-12">
+      <div class="d-none d-lg-flex justify-center position-relative w-screen ml-15">
         <template 
           v-for="(link, idx) in links" 
           :key="`${link.href}-${idx}`">
@@ -34,10 +34,9 @@
     <v-spacer class="d-none d-md-block" />
 
     <!-- Rechtsausgerichtete Elemente -->
-    <v-btn
-      text="New Account" 
-      class="link" />
     <v-btn 
+      size="large"
+      href="/signin"
       class="mr-4 btn-outline-highlight"
       text="sign in" />
     <MobileMenu :links="links" />
@@ -52,7 +51,8 @@ type LinkElement = {
 const links: LinkElement[] = [
   { href: '/about', label: 'About' },
   { href: '/pricing', label: 'Pricing' },
-  { href: '/products', label: 'Products' }
+  { href: '/products', label: 'Products' },
+  { href: '/wiki', label: 'Wiki' }
 ]
 </script>
 
