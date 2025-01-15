@@ -2,17 +2,17 @@
   <BackgroundLogo />
   <section class="bg-white text-center pa-md-8 dots py-8">
     <h1 class="text-h2 text-md-h1 font-weight-bold text-primary">
-      SIGNIN
+      SIGN IN
     </h1>
 
     <v-row class="mt-12 position-relative ga-2 ga-md-8 d-flex justify-center pa-md-12">
       <v-col 
-        class="border-md border-primary rounded-lg bg-white pa-4"
+        class="bg-white pa-4 border-lg rounded-lg border-primary"
         cols="10" 
         sm="10"
         md="5"
         lg="5">
-        <h2 class="pa-2 text-h4 font-weight-bold">
+        <h2 class="pa-4 text-h4 font-weight-bold">
           Register
         </h2>
         <div>
@@ -57,11 +57,13 @@
         sm="10"
         md="5"
         lg="3"
-        class="border-md border-primary rounded-lg bg-white pa-4">
-        <h2 class="pa-2 text-h4 font-weight-bold">
+        class="bg-white pa-4 border-lg rounded-lg border-primary d-flex flex-column">
+        <h2 class="pa-4 text-h4 text-center font-weight-bold">
           Login
         </h2>
-        <form @submit.prevent>
+        <form 
+          class="w-100"
+          @submit.prevent>
           <v-text-field
             v-model="emailAddress"
             :counter="10"
@@ -74,13 +76,15 @@
             label="password"
             type="password"
             required />
-          <v-btn
-            color="primary"
-            size="x-large"
-            class="w-100"
-            @click="login">
-            login
-          </v-btn>
+          <div class="d-flex h-100 align-end">
+            <v-btn
+              color="primary"
+              size="x-large"
+              class="w-100 mt-auto"
+              @click="login">
+              login
+            </v-btn>
+          </div>
         </form>
       </v-col>
     </v-row>
