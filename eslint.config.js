@@ -30,6 +30,7 @@ export default [
           allowTernary: true,
         },
       ],
+      'vue/no-v-html': 'off',
       'vue/multi-word-component-names': 'off',
       "vue/html-closing-bracket-newline": [
         "error",
