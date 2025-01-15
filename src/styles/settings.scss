@@ -9,9 +9,9 @@
 //   $color-pack: false
 // );
 
-@import './background.scss';
-@import './icons.scss';
-@import './layout.scss';
-@import './navigation.scss';
-@import './button.scss';
-@import './keyframes/main.scss';
+@use './background.scss';
+@use './icons.scss';
+@use './layout.scss';
+@use './navigation.scss';
+@use './button.scss';
+@use './keyframes/main.scss';
