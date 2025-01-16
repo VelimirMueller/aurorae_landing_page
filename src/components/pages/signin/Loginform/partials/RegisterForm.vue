@@ -1,5 +1,5 @@
 <template>
-  <h2 class="pa-4 text-h4 font-weight-bold">
+  <h2 class="pa-4 text-h4 font-weight-bold bg-primary text-white mb-4">
     Register
   </h2>
   <v-form 
@@ -46,11 +46,20 @@
       @click="register">
       register
     </v-btn>
+    <v-btn
+      v-if="form"
+      color="grey"
+      variant="outlined"
+      size="x-large"
+      class="w-100 mt-4 text-textDark"
+      @click="form?.reset()">
+      reset form
+    </v-btn>
   </v-form>
 </template>
 
 <script lang="ts" setup>
-import { emailRules, passwordRules, nameRules } from './formRules'
+import { emailRules, passwordRules, nameRules } from '../../../../../utils/formRules'
 import { validateFormSubmit, submit } from '@/composables/useForms'
 import type { VuetifyFormElement } from '@/composables/useForms'
 

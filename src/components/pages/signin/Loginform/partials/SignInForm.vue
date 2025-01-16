@@ -1,5 +1,5 @@
 <template>
-  <h2 class="pa-4 text-h4 text-center font-weight-bold">
+  <h2 class="pa-4 text-h4 text-center font-weight-bold bg-primary text-white mb-4">
     Login
   </h2>
   <v-form 
@@ -35,7 +35,7 @@
 </template>
 
 <script lang="ts" setup>
-  import { emailRules, passwordRules } from './formRules'
+  import { emailRules, passwordRules } from '../../../../../utils/formRules'
   import { validateFormSubmit, submit } from '@/composables/useForms'
   import type { VuetifyFormElement } from '@/composables/useForms'
 
