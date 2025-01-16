@@ -17,9 +17,12 @@ declare module 'vue' {
     LandingFeatureLeft: typeof import('./components/pages/landing/LandingFeature/LandingFeatureLeft.vue')['default']
     LandingFeatureRight: typeof import('./components/pages/landing/LandingFeature/LandingFeatureRight.vue')['default']
     LandingHero: typeof import('./components/pages/landing/LandingHero.vue')['default']
+    LoginForm: typeof import('./components/pages/signin/Loginform/LoginForm.vue')['default']
     LogoLine: typeof import('./components/LogoLine.vue')['default']
     MobileMenu: typeof import('./components/layout/MobileMenu.vue')['default']
+    RegisterForm: typeof import('./components/pages/signin/Loginform/RegisterForm.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SignInForm: typeof import('./components/pages/signin/Loginform/SignInForm.vue')['default']
   }
 }
