@@ -5,13 +5,13 @@
       <v-col 
         cols="12"
         md="9"
-        class="d-flex align-center">
-        <div class="text-h6 pa-2 pa-md-12 w-100 h-100">
-          <h1 class="text-h2 text-sm-h1 text-center font-weight-bold my-4">
+        class="d-flex align-center py-4">
+        <div class="text-h6 w-100 h-100">
+          <h1 class="text-h3 text-md-h1 text-left ml-4 ml-md-0 text-md-center my-2 bg-white font-weight-bold py-4 dots border-t-lg border-b-lg my-md-8 border-primary bg-white">
             Pricing
           </h1>
 
-          <div class="d-flex w-100 ga-2 mt-4 h-75 mt-8">
+          <div class="d-flex w-100 ga-2 h-75 mt-4 pb-8">
             <v-row>
               <template 
                 v-for="feature in features"
@@ -24,13 +24,14 @@
                   <v-card 
                     color="primary"
                     :class="`border-lg border-${feature.color} pa-2 rounded-lg card`">
+                    <v-chip
+                      class="outline-lg outline-white mb-4 mt-2"
+                      :color="feature.color"
+                      size="x-large">
+                      {{ feature.name }}
+                    </v-chip>
                     <v-list class="bg-white rounded-lg d-flex flex-column  list">
                       <v-list-item :class="`mb-2 border-b-lg border-${feature.color} pb-2`">
-                        <v-chip 
-                          :color="feature.color"
-                          size="x-large">
-                          {{ feature.name }}
-                        </v-chip>
                         <h3 class="text-h3 font-weight-bold mt-4">
                           {{ `${feature.price} ${feature.currency}` }}
                           <span class="text-subtitle-2 font-weight-bold">
@@ -93,8 +94,7 @@ const features: Feature[] = [
     price: 199,
     currency: '€',
     labels: [
-      'Chatbot',
-      'Customer support'
+      'Chatbot'
     ],
     icon: 'mdi-check-decagram-outline',
     interval: '/per month',

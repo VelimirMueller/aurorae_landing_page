@@ -4,7 +4,15 @@
   background-repeat: repeat; /* or omit this declaration */
   background-size: 130px 150px;
   background-position: center;
+
+  &-white {
+    background-image: radial-gradient(#ffffff4f 2px, transparent 0px)!important;
+    background-repeat: repeat; /* or omit this declaration */
+    background-size: 130px 150px;
+    background-position: center;
+  }
 }
+  
 
 .text-container {
   margin: 0;

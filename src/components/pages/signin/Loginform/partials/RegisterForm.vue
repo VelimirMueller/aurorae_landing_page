@@ -1,9 +1,10 @@
 <template>
-  <h2 class="pa-4 text-h4 font-weight-bold bg-primary text-white mb-4">
+  <h2 class="pa-4 text-left mb-4 bg-white text-h4 font-weight-bold border-b-lg border-t-lg border-primary">
     Register
   </h2>
   <v-form 
     ref="form"
+    class="bg-white pa-4"
     fast-fail 
     @submit.prevent>
     <v-text-field
@@ -42,6 +43,7 @@
     <v-btn 
       color="primary"
       size="x-large"
+      variant="outlined"
       class="w-100"
       @click="register">
       register
@@ -59,7 +61,7 @@
 </template>
 
 <script lang="ts" setup>
-import { emailRules, passwordRules, nameRules } from '../../../../../utils/formRules'
+import { emailRules, passwordRules, nameRules } from '@/utils/formRules'
 import { validateFormSubmit, submit } from '@/composables/useForms'
 import type { VuetifyFormElement } from '@/composables/useForms'
 
@@ -82,8 +84,7 @@ const payload = ref({
 
 
 const form: Ref<VuetifyFormElement|undefined> = ref()
-const isLoading: Ref<boolean> = ref(false)
-    
+const isLoading: Ref<boolean> = ref(false)  
 const submitRegister = () => submit(isLoading, payload, '/api/v1/register', '/public')
 const register = () => { validateFormSubmit(form, submitRegister) }
 </script>

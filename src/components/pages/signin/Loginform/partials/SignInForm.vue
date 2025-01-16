@@ -1,14 +1,15 @@
 <template>
-  <h2 class="pa-4 text-h4 text-center font-weight-bold bg-primary text-white mb-4">
+  <h2 class="pa-4 mb-4 text-h4 text-left font-weight-bold border-b-lg bg-white border-t-lg border-primary">
     Login
   </h2>
   <v-form 
     ref="form"
-    class="w-100"
+    class="w-100 bg-white pa-4"
     @submit.prevent>
     <v-text-field
       v-model="emailAddress"
       autocomplete="email"
+      class="rounded-lg"
       :rules="emailRules"
       hint="example@emailaddress.com"
       label="e-mail*"
@@ -22,13 +23,32 @@
       hint="Minimum 6 characters"
       type="password*"
       required />
-    <div class="d-flex h-md-100 align-end">
+    <div class="d-flex justify-start flex-column">
+      <v-checkbox 
+        label="Remember me"
+        value="remember" />
+      <v-checkbox 
+        label="Accept AGB" 
+        value="agb"
+        checked />
+    </div>
+    <div class="d-flex h-md-100 align-end flex-column">
       <v-btn
         color="primary"
         size="x-large"
+        variant="outlined"
         class="w-100 mt-auto"
         @click="login">
         login
+      </v-btn>
+      <v-btn
+        v-if="form"
+        color="grey"
+        variant="outlined"
+        size="x-large"
+        class="w-100 mt-4 text-textDark"
+        @click="form?.reset()">
+        reset form
       </v-btn>
     </div>
   </v-form>

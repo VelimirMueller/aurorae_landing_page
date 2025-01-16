@@ -1,21 +1,21 @@
 
 <template>
-  <v-row class="mt-10 position-relative ga-2 ga-md-8 d-flex justify-center pb-md-12">
+  <v-row class="position-relative ga-2 ga-md-8 d-flex justify-center">
     <v-col 
-      class="bg-white pa-4 border-lg rounded-lg border-primary"
-      cols="10" 
+      cols="11" 
       sm="10"
       md="5"
-      lg="5">
+      lg="4"
+      class="bg-white border-thin rounded-lg border-accent pa-8">
       <RegisterForm />
     </v-col>
       
     <v-col 
-      cols="10" 
+      cols="11" 
       sm="10"
       md="5"
       lg="3"
-      class="bg-white pa-4 border-lg rounded-lg border-primary d-flex flex-column">
+      class="bg-white border-thin rounded-lg border-accent pa-8">
       <SignInForm />
     </v-col>
   </v-row>

@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white">
+  <section class="bg-white dots">
     <LandingHero class="pb-14" />
   </section>
 
@@ -48,7 +48,7 @@
     </LandingFeature>
   </section>
 
-  <section class="bg-white py-12 pa-md-0 my-12">
+  <section class="bg-white py-12 pa-md-0 my-12 dots">
     <v-row class="pa-0">
       <v-col
         cols="12"
@@ -118,7 +118,7 @@
     </LandingFeature>
   </section>
 
-  <section class="bg-white">
+  <section class="bg-white dots">
     <v-row class="pa-0 flex-row-reverse">
       <v-col 
         cols="12" 
@@ -206,7 +206,7 @@
     </v-row>
   </section>
 
-  <section class="bg-white">
+  <section class="bg-white ">
     <div class="text-container w-100">
       <h2 class="text-h3 text-md-h2 text-lg-h1 text-left text-md-center text-bold pt-md-8 mt-md-4 font-weight-bold mb-15">
         Model Trainer

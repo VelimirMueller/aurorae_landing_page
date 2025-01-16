@@ -1,17 +1,21 @@
 <template>
-  <section class="bg-white pa-0 d-flex align-center flex-column dots">
+  <section class="bg-primary pa-0 d-flex align-center flex-column dots-white">
     <BackgroundLogo />
-    <h1 class="text-h2 text-md-h1 text-md-h1 font-weight-bold pt-8 mt-4 pt-md-12 text-primary">
-      Products
-    </h1>
+    <v-row class="w-100 d-flex justify-center">
+      <v-col cols="12" sm="8">
+        <h1 class="text-left text-md-center text-h3 text-md-h1 font-weight-bold py-4 my-md-8 text-white border-t-lg border-b-lg border-info w-100">
+          Products
+        </h1>
+      </v-col>
+    </v-row>
     <template 
       v-for="product in products" 
       :key="product.id">
-      <v-row class="d-flex justify-center pb-4 w-100 h-100 pt-md-12 position-relative rounded-lg">
+      <v-row class="d-flex justify-center pb-4 w-100 h-100 position-relative rounded-lg">
         <v-col
           cols="12"
           sm="8"
-          class="bg-white h-100 border-b-lg border-t-lg border-secondary">
+          class="bg-white h-100 border-b-lg border-t-lg border-secondary bg-white">
           <h2 
             :id="product.product.pageHref.replace('#', '')"
             class="text-container w-100 text-h4 text-md-h2 pa-4">
@@ -21,10 +25,10 @@
         <v-col
           cols="12"
           sm="8"
-          class="">
+          class="bg-white">
           <v-data-table
             color="primary"
-            class="text-textDark bg-primary table h-100"
+            class="text-textDark bg-white table h-100"
             :items="products.map(prod => prod.product).filter(prod => prod.name === product.product.name)"
             hide-default-footer />
         </v-col>
