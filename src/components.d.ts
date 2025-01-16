@@ -20,9 +20,9 @@ declare module 'vue' {
     LoginForm: typeof import('./components/pages/signin/Loginform/LoginForm.vue')['default']
     LogoLine: typeof import('./components/LogoLine.vue')['default']
     MobileMenu: typeof import('./components/layout/MobileMenu.vue')['default']
-    RegisterForm: typeof import('./components/pages/signin/Loginform/RegisterForm.vue')['default']
+    RegisterForm: typeof import('./components/pages/signin/Loginform/partials/RegisterForm.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    SignInForm: typeof import('./components/pages/signin/Loginform/SignInForm.vue')['default']
+    SignInForm: typeof import('./components/pages/signin/Loginform/partials/SignInForm.vue')['default']
   }
 }
