@@ -11,25 +11,13 @@ export const validateFormSubmit = async (form: Ref<VuetifyFormElement|undefined>
     console.log(valid);
     
     if (!valid) { 
-      if (confirm('Form is invalid, reset form?')) {
-        resetForm(form)
-      }
+      console.error('Form fields are not valid')
      }
     else {
       callback()
     }
   } catch (err) {
     alert('Could not validate form due to error: ' + err)
-  }
-}
-
-export const resetForm = (form: Ref<VuetifyFormElement|undefined>): void => {
-  if (!form.value) return alert('Form is not available')
-
-  try {
-    form.value.reset()
-  } catch (err) {
-    console.error('Could not reset form due to error: ', err)
   }
 }
 
