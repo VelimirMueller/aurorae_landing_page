@@ -2,11 +2,11 @@
   <BackgroundLogo />
   <div class="d-flex justify-center text-center dots">
     <div class="w-100 w-md-75 w.lg-66 mt-6 mt-md-12">
-      <h1 class="px-2 px-sm-4 text-h3 text-left text-md-center text-sm-h3 text-md-h2 text-lg-h1 text-primary">
+      <h1 class="mx-2 mx-md-0 px-2 px-sm-4 text-h3 text-left text-md-center text-sm-h3 text-md-h2 text-lg-h1 text-primary">
         EXPLORE <span class="headline-highlight">AURORAE</span> IN YOUR AI WEB <span class="headline-highlight">APPLICATION</span>
       </h1>
       <div>
-        <h2 class="padding mt-4 mb-4 px-2 px-md-12 text-left text-md-center text-colorDark">
+        <h2 class="mx-2 mx-md-0 padding mt-4 mb-4 px-2 px-md-12 text-left text-md-center text-colorDark">
           Unleash your business 
           <span class="text-secondary">potential</span> with AI <span class="text-secondary">power</span>. 
           Upgrade your <span class="text-secondary">productivity</span> with AI

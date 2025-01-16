@@ -1,21 +1,25 @@
 <template>
   <section class="bg-white dots">
-    <LandingHero class="pb-14" />
+    <LandingHero class="pb-14 mt-4" />
   </section>
 
   <section
     id="logoline"
-    class="bg-primary">
+    class="bg-primary my-4">
     <LogoLine />
   </section>
 
   <section
     id="cards"
-    class="bg-white pt-md-12 px-md-12">
-    <h2 class="text-textDark mb-md-12 pt-md-12 text-h3 text-md-h3 text-lg-h2 text-md-center py-12 py-md-12 px-4">
-      Better<span class="text-secondary"> AI </span>Experience with<span class="text-secondary"> Aurorae </span>
-    </h2>
-
+    class="my-4 bg-white pt-md-12 px-md-12">
+    <v-row class="d-flex justify-center">
+      <v-col cols="12" md="8">
+        <h2 class="mx-2 mx-md-0 text-textDark mb-md-12 pt-md-12 text-h3 text-md-h3 text-lg-h2 text-left text-md-center py-12 py-md-12 px-4 border-t-lg border-b-lg border-primary">
+          Better<span class="text-secondary"> AI </span>Experience with<span class="text-secondary"> Aurorae </span>
+        </h2>
+      </v-col>
+    </v-row>
+    
     <LandingCards />
   </section>
 
@@ -23,9 +27,13 @@
     <LandingFeature reverse-cols>
       <template #headline>
         <div class="text-container animate">
-          <h2 class="text-h3 text-md-h2 text-lg-h1 text-left text-md-center text-bold pt-2 pt-md-8 mt-md-4 font-weight-bold">
-            AI Chatbot
-          </h2>
+          <v-row class="d-flex justify-center">
+            <v-col cols="12" md="8">
+              <h2 class="mx-2 ml-md-0 text-h3 text-md-h2 text-lg-h1 text-left text-md-center text-bold py-4 my-md-4 font-weight-bold border-b-lg border-t-lg border-white">
+                AI Chatbot
+              </h2>
+            </v-col>
+          </v-row>
         </div>
       </template>
 
@@ -48,19 +56,23 @@
     </LandingFeature>
   </section>
 
-  <section class="bg-white py-12 pa-md-0 my-12 dots">
+  <section class="bg-white pa-md-0 my-12 dots">
     <v-row class="pa-0">
       <v-col
         cols="12"
         md="6"
         class="my-auto icon">
-        <h4 class="text-left text-sm-center text-sm-h4 text-h4 px-2 mb-12">
-          Awesome <span class="highlight-text">Chat</span> Integration
-        </h4>
+        <v-row class="d-flex justify-center">
+          <v-col cols="12" md="8">
+            <h4 class="mx-2 ml-md-0 text-left text-md-center text-sm-h4 text-h4 px-2 py-4 mb-12 border-t-lg border-b-lg border-primary">
+              Awesome <span class="highlight-text">Chat</span> Integration
+            </h4>
+          </v-col>
+        </v-row>
         <template 
           v-for="description in iconDescriptionsChat" 
           :key="description.id">
-          <span class="w-100 d-flex justify-center mt-4">
+          <span class="w-100 d-flex justify-center my-8">
             <v-icon 
               class="icon"
               color="textDark"
@@ -89,13 +101,17 @@
     </v-row>
   </section>
 
-  <section class="bg-primary min-section pt-2 pt-md-15 my-12">
+  <section class="bg-primary min-section pt-md-15 my-12">
     <LandingFeature reverse-cols>
       <template #headline>
         <div class="text-container animate">
-          <h2 class="text-h3 text-md-h2 text-lg-h1 text-left text-md-center text-bold pt-md-8 mt-md-4 font-weight-bold">
-            Image Classification
-          </h2>
+          <v-row class="d-flex justify-center">
+            <v-col cols="12" md="8">
+              <h2 class="mx-2 mx-md-0 text-h3 text-md-h2 text-lg-h1 text-left text-md-center text-bold py-4 my-4 font-weight-bold border-t-lg border-b-lg border-white">
+                Image Classification
+              </h2>
+            </v-col>
+          </v-row>
         </div>
       </template>
 
@@ -118,15 +134,19 @@
     </LandingFeature>
   </section>
 
-  <section class="bg-white dots">
+  <section class="bg-white dots my-4">
     <v-row class="pa-0 flex-row-reverse">
       <v-col 
         cols="12" 
         md="6" 
         class="my-auto pb-12">
-        <h4 class="text-left text-sm-center text-sm-h4 text-h4 px-2 mb-12">
-          Powerful <span class="highlight-text">Image</span> Classification
-        </h4>
+        <v-row class="d-flex justify-center">
+          <v-col cols="12" md="8">
+            <h4 class="ml-2 ml-md-0 text-left text-md-center text-sm-h4 text-h4 py-4 mb-12 border-t-lg border-b-lg border-primary">
+              Powerful <span class="highlight-text">Image</span> Classification
+            </h4>
+          </v-col>
+        </v-row>
         <template 
           v-for="description in iconDescriptionsImage" 
           :key="description.id">
@@ -159,20 +179,38 @@
     </v-row>
   </section>
 
-  <section class="bg-primary my-md-12">
+  <section class="bg-primary my-md-12 my-2">
     <div class="text-container w-100">
-      <h2 class="text-h3 text-md-h2 text-lg-h1 text-left text-md-center text-bold pt-md-8 mt-md-4 font-weight-bold mb-15">
-        Admin Dashboard
-      </h2>
+      <v-row class="d-flex justify-center">
+        <v-col cols="12" md="8">
+          <h2 class="text-left text-md-center text-h3 text-md-h2 text-lg-h1 text-left text-md-center text-bold py-4 font-weight-bold mb-8 border-t-lg border-b-lg border-white">
+            Admin Dashboard
+          </h2>
+        </v-col>
+      </v-row>
     </div>
     <v-row>
+      <v-col
+        cols="12"
+        md="6">
+        <img
+          src="../assets/dashboard.webp"
+          class="w-100"
+          alt=""
+          lazy>
+      </v-col>
+      
       <v-col 
         cols="12" 
         md="6" 
         class="my-auto pb-12">
-        <h4 class="text-left text-sm-center text-sm-h4 text-h4 px-2 mb-12">
-          Inbuilt <span class="highlight-text">Model</span> Trainer
-        </h4>
+        <v-row class="d-flex justify-center">
+          <v-col cols="12" md="8">
+            <h4 class="mx-4 mx-md-0 text-left text-sm-center text-sm-h4 text-h4 py-4 my-8 border-t-lg border-b-lg border-white">
+              Includes <span class="highlight-text">Dashboard</span>
+            </h4>
+          </v-col>
+        </v-row>
         <template 
           v-for="description in iconDescriptionsDashboard" 
           :key="description.id">
@@ -190,34 +228,26 @@
         </template>
       </v-col>
 
-      <v-col
-        cols="12"
-        lg="6">
-        <img
-          src="../assets/dashboard.webp"
-          class="w-100"
-          alt=""
-          lazy>
-      </v-col>
-
       <ButtonRow 
         href="/products#dashboard"
         class="mt-12 mt-lg-2" />
     </v-row>
   </section>
 
-  <section class="bg-white ">
-    <div class="text-container w-100">
-      <h2 class="text-h3 text-md-h2 text-lg-h1 text-left text-md-center text-bold pt-md-8 mt-md-4 font-weight-bold mb-15">
-        Model Trainer
-      </h2>
-    </div>
+  <section class="bg-white my-4">
+    <v-row class="d-flex justify-center">
+      <v-col cols="12" md="8" class="text-container">
+        <h2 class="ml-2 ml-md-0 text-left text-md-center text-h3 text-md-h2 text-lg-h1 text-left text-md-center font-weight-bold py-4 my-4 font-weight-bold mb-15 border-t-lg border-b-lg border-primary">
+          Model Trainer
+        </h2>
+      </v-col>
+    </v-row>
 
     <div class="d-flex justify-center align-center h-100">
       <v-row>
         <v-col
           cols="12"
-          lg="6">
+          md="6">
           <img
             src="../assets/aimodel.webp"
             class="w-100"
@@ -226,12 +256,16 @@
         </v-col>
 
         <v-col 
-          cols="12" 
-          md="6" 
+          cols="12"
+          md="6"
           class="my-auto pb-12">
-          <h4 class="text-left text-sm-center text-sm-h4 text-h4 px-2 mb-12">
-            Inbuilt <span class="highlight-text">Model</span> Trainer
-          </h4>
+          <v-row class="d-flex justify-center">
+            <v-col cols="12" lg="6">
+              <h4 class="ml-2 ml-md-0 text-left text-sm-center text-sm-h4 text-h4 py-2 my-8 border-t-lg border-b-lg border-primary">
+                Inbuilt <span class="highlight-text">Model</span> Trainer
+              </h4>
+            </v-col>
+          </v-row>
           <template 
             v-for="description in iconDescriptionsTrainer" 
             :key="description.id">
@@ -258,8 +292,8 @@
 </template>
 
 <script setup lang="ts">
-const featureAiChatSubheadline: string = '<p class="text-h4 text-md-h4 text-lg-h3 text-md-left">Experience stunnning <span class="text-accent">AI</span> Chatbot integration with <span class="text-accent">Aurorae Chat</span></p>'
-const featureImageClassificationSubheadline: string = '<p class="text-h4 text-md-h4 text-lg-h3 text-md-left">Explore easy image classification with <span class="text-accent">Aurorae Image</span></p>'
+const featureAiChatSubheadline: string = '<p class="mx-2 mx-md-0 text-h5 text-md-h4 text-md-h4 text-lg-h3 text-md-left">Experience stunnning <span class="text-accent">AI</span> Chatbot integration with <span class="text-accent">Aurorae Chat</span></p>'
+const featureImageClassificationSubheadline: string = '<p class="mx-2 mx-md-0 text-h4 text-md-h4 text-lg-h3 text-md-left">Explore easy image classification with <span class="text-accent">Aurorae Image</span></p>'
 
 const iconTextsChat: {text: string, highlightText: string}[] = [
   {text: '100%', highlightText: 'customizable'},
@@ -286,9 +320,9 @@ const iconDescriptionsImage: {id: number, text: string, icon: string}[] = [
 ]
 
 const iconDescriptionsDashboard: {id: number, text: string, icon: string}[] = [
-  {id: 0, text: 'Classify your images automatically.', icon: 'mdi-monitor-dashboard'},
-  {id: 1, text: 'Handle your product images with AI.', icon: 'mdi-monitor-dashboard'},
-  {id: 0, text: 'Model can be refined with Aurorae Trainer', icon: 'mdi-monitor-dashboard'}
+  {id: 0, text: 'Complete overview of your aurorae application.', icon: 'mdi-monitor-dashboard'},
+  {id: 1, text: 'Easy user handling.', icon: 'mdi-monitor-dashboard'},
+  {id: 0, text: 'Database interaction included.', icon: 'mdi-monitor-dashboard'}
 ]
 
 const iconDescriptionsTrainer: {id: number, text: string, icon: string}[] = [
