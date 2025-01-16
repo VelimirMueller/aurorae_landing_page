@@ -47,11 +47,8 @@
   </section>
 
   <section class="bg-white pa-md-0 my-12 dots">
-    <v-row class="pa-0">
-      <v-col
-        cols="12"
-        md="6"
-        class="my-auto icon">
+    <LeftRightScalingImage>
+      <template #left>
         <MainHeadline border-color="border-primary">
           <h4 class="mx-2 ml-md-0 text-left text-md-center text-sm-h4 text-h4">
             Awesome <span class="highlight-text">Chat</span> Integration
@@ -62,21 +59,18 @@
           :key="description.id">
           <TextIcon :description="description" />
         </template>
-      </v-col>
+      </template>
 
-      <v-col 
-        cols="12" 
-        md="6" 
-        class="pa-0 scale mt-12 mt-md-0 d-none d-md-block">
+      <template #right>
         <div class="w-100 h-100 border-lg border-accent">
           <img 
             class="scale w-100 h-100 border-lg border-accent" 
-            src="../assets/chat.webp" 
+            src="@/assets/chat.webp" 
             alt=""
             lazy>
         </div>
-      </v-col>
-    </v-row>
+      </template>
+    </LeftRightScalingImage>
   </section>
 
   <section class="bg-primary min-section pt-md-15 my-12">
@@ -105,11 +99,8 @@
   </section>
 
   <section class="bg-white dots my-4">
-    <v-row class="pa-0 flex-row-reverse ">
-      <v-col 
-        cols="12" 
-        md="6" 
-        class="my-auto pb-15">
+    <LeftRightScalingImage :is-reverse="true">
+      <template #left>
         <MainHeadline border-color="border-primary">
           <h4 class="mx-2 mx-md text-left text-md-center text-sm-h4 text-h4">
             Easy <span class="highlight-text">Image</span> Classification
@@ -120,12 +111,9 @@
           :key="description.id">
           <TextIcon :description="description" />
         </template>
-      </v-col>
+      </template>
 
-      <v-col 
-        cols="12" 
-        md="6" 
-        class="pa-0 mt-12 mt-md-0 d-none d-md-block">
+      <template #right>
         <div class="w-100 h-100 border-lg border-accent">
           <img 
             class="scale w-100 h-100 border-lg border-accent" 
@@ -133,22 +121,14 @@
             alt=""
             lazy>
         </div>
-      </v-col>
-    </v-row>
+      </template>
+    </LeftRightScalingImage>
   </section>
 
   <section class="bg-primary my-md-12 my-2">
     <AnimatedHeadline headline="Admin Dashboard" />
     <LeftRight cta-route="/products#dashboard">
       <template #left>
-        <img
-          src="../assets/dashboard.webp"
-          class="w-100"
-          alt=""
-          lazy>
-      </template>
-
-      <template #right>
         <MainHeadline text-light>
           <h4 class="mx-4 mx-md-0 text-left text-sm-center text-sm-h4 text-h4">
             Includes <span class="highlight-text">Dashboard</span>
@@ -159,6 +139,14 @@
           :key="description.id">
           <TextIcon :description="description" />
         </template>
+      </template>
+
+      <template #right>
+        <img
+          src="../assets/dashboard.webp"
+          class="w-100"
+          alt=""
+          lazy>
       </template>
     </LeftRight>
   </section>
@@ -206,6 +194,7 @@ import
     iconDescriptionsTrainer
 } from '@/pages/landingPageData'
 import { useObserveIntersectionsAnimation } from '@/composables/useObserveIntersection'
+import LeftRightScalingImage from '@/components/structure/LeftRightScalingImage.vue';
 
 const featureAiChatSubheadline: string = '<p class="mx-2 mx-md-0 text-h5 text-md-h4 text-md-h4 text-lg-h3 text-md-left">Experience stunnning <span class="text-accent">AI</span> Chatbot integration with <span class="text-accent">Aurorae Chat</span></p>'
 const featureImageClassificationSubheadline: string = '<p class="mx-2 mx-md-0 text-h4 text-md-h4 text-lg-h3 text-md-left">Explore easy image classification with <span class="text-accent">Aurorae Image</span></p>'

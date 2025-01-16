@@ -5,6 +5,5 @@
       headline="Sign in" 
       text-light />
     <LoginForm />
-    <LogoLine class="opacity-0" />
   </section>
 </template>
