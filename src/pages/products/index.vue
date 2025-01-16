@@ -1,13 +1,9 @@
 <template>
   <section class="bg-primary pa-0 d-flex align-center flex-column dots-white">
     <BackgroundLogo />
-    <v-row class="w-100 d-flex justify-center">
-      <v-col cols="12" sm="8">
-        <h1 class="text-left text-md-center text-h3 text-md-h1 font-weight-bold py-4 my-md-8 text-white border-t-lg border-b-lg border-info w-100">
-          Products
-        </h1>
-      </v-col>
-    </v-row>
+    <MainHeadline 
+      headline="Products"
+      text-light />
     <template 
       v-for="product in products" 
       :key="product.id">

@@ -7,22 +7,26 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AnimatedHeadline: typeof import('./components/text/AnimatedHeadline.vue')['default']
     AppFooter: typeof import('./components/layout/AppFooter.vue')['default']
     AppNavBar: typeof import('./components/layout/AppNavBar.vue')['default']
-    BackgroundLogo: typeof import('./components/BackgroundLogo.vue')['default']
-    ButtonRow: typeof import('./components/ButtonRow.vue')['default']
+    BackgroundLogo: typeof import('./components/image/BackgroundLogo.vue')['default']
+    ButtonRow: typeof import('./components/ui/ButtonRow.vue')['default']
     ChipLabel: typeof import('./components/ChipLabel.vue')['default']
     LandingCards: typeof import('./components/pages/landing/LandingCards.vue')['default']
     LandingFeature: typeof import('./components/pages/landing/LandingFeature.vue')['default']
     LandingFeatureLeft: typeof import('./components/pages/landing/LandingFeature/LandingFeatureLeft.vue')['default']
     LandingFeatureRight: typeof import('./components/pages/landing/LandingFeature/LandingFeatureRight.vue')['default']
     LandingHero: typeof import('./components/pages/landing/LandingHero.vue')['default']
+    LeftRight: typeof import('./components/structure/LeftRight.vuetRight.vue')['default']
     LoginForm: typeof import('./components/pages/signin/Loginform/LoginForm.vue')['default']
     LogoLine: typeof import('./components/LogoLine.vue')['default']
+    MainHeadline: typeof import('./components/text/MainHeadline.vue')['default']
     MobileMenu: typeof import('./components/layout/MobileMenu.vue')['default']
     RegisterForm: typeof import('./components/pages/signin/Loginform/partials/RegisterForm.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SignInForm: typeof import('./components/pages/signin/Loginform/partials/SignInForm.vue')['default']
+    TextIcon: typeof import('./components/text/TextIcon.vue')['default']
   }
 }

@@ -7,11 +7,9 @@
         md="9"
         class="d-flex align-center py-4">
         <div class="text-h6 w-100 h-100">
-          <h1 class="text-h3 text-md-h1 text-left ml-4 ml-md-0 text-md-center my-2 bg-white font-weight-bold py-4 dots border-t-lg border-b-lg my-md-8 border-primary bg-white">
-            Pricing
-          </h1>
+          <MainHeadline headline="Pricing" />
 
-          <div class="d-flex w-100 ga-2 h-75 mt-4 pb-8">
+          <div class="d-flex w-100 ga-2 h-75 mt-4">
             <v-row>
               <template 
                 v-for="feature in features"

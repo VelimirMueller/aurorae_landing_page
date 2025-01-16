@@ -5,8 +5,8 @@
       <v-col 
         cols="12"
         md="8">
-        <article class="text-h6 px-2 pa-md-8 pb-12">
-          <h1 class="text-h3 text-md-h1 text-left text-md-center mx-2 mx-md-0 py-4 font-weight-bold border-t-lg border-b-lg border-info">
+        <article class="text-h6 py-md-8 pb-12">
+          <h1 class="text-h3 text-md-h1 text-left text-md-center mx-2 mx-md-0 py-4 font-weight-bold border-t-lg border-b-lg border-white">
             About
           </h1>
 

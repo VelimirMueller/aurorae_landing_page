@@ -3,7 +3,7 @@
     <img 
       class="opacity-10"
       height="450px"
-      src="../assets/about_hero_image.webp" 
+      src="@/assets/about_hero_image.webp" 
       alt="Aurorae Hintergrund Logo">
   </div>
 </template>
