@@ -73,7 +73,7 @@ const payload = ref({
 
 
 const form: Ref<VuetifyFormElement|undefined> = ref()
-  const isLoading: Ref<boolean> = ref(false)
+const isLoading: Ref<boolean> = ref(false)
     
 const submitRegister = () => submit(isLoading, payload, '/api/v1/register', '/public')
 const register = () => { validateFormSubmit(form, submitRegister) }

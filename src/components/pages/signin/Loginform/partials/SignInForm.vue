@@ -2,13 +2,14 @@
   <h2 class="pa-4 text-h4 text-center font-weight-bold">
     Login
   </h2>
-  <form 
+  <v-form 
+    ref="form"
     class="w-100"
     @submit.prevent>
     <v-text-field
       v-model="emailAddress"
       autocomplete="email"
-      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+      :rules="emailRules"
       hint="example@emailaddress.com"
       label="e-mail*"
       required />
@@ -17,7 +18,7 @@
       :counter="25"
       autocomplete="password"
       label="password"
-      pattern=".{6,}"
+      :rules="passwordRules"
       hint="Minimum 6 characters"
       type="password*"
       required />
@@ -26,58 +27,33 @@
         color="primary"
         size="x-large"
         class="w-100 mt-auto"
-        @click="submit">
+        @click="login">
         login
       </v-btn>
     </div>
-  </form>
+  </v-form>
 </template>
 
 <script lang="ts" setup>
-const emailAddress: Ref<string> = ref('')
-const password: Ref<string> = ref('')
-const isLoading: Ref<boolean> = ref(false)
+  import { emailRules, passwordRules } from './formRules'
+  import { validateFormSubmit, submit } from '@/composables/useForms'
+  import type { VuetifyFormElement } from '@/composables/useForms'
 
-const isFormValid: ComputedRef<string> = computed(() => {
-  return emailAddress.value && password.value
-})
-
-const resetForm = (): void => {
-  emailAddress.value = ''
-  password.value = ''
-}
-
-const submit = (): void => {
-    if (isFormValid.value) {
-      isLoading.value = true
-
-      try {
-        fetch('/api/v1/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ 
-          emailAddress: emailAddress.value,
-          password: password.value
-         })
-      })
-        .then(response => {
-          if (response.ok) {
-            resetForm()
-            window.location.href = '/public'
-          } else {
-            console.error(`Error with response from /api/v1/login POST: status: ${response.status} statusText: ${response.statusText}`)
-          }
-        })
-        .finally(() => {
-          isLoading.value = false
-        })
-      } catch (err) {
-        console.error('error:', err)
-      }
-    } else {
-      console.error('error: login form - not all fields are filled in')
-    }
+  type SignInFormFields = {
+    userName: Ref<string>
+    password: Ref<string>
   }
+  const emailAddress: Ref<string> = ref('')
+  const password: Ref<string> = ref('')
+
+  const payload = ref({
+    emailAddress,
+    password
+  }) as unknown as Ref<SignInFormFields> 
+
+  const form: Ref<VuetifyFormElement|undefined> = ref()
+  const isLoading: Ref<boolean> = ref(false)
+
+  const submitLogin = () => submit(isLoading, payload, '/api/v1/login', '/public')
+  const login = () => { validateFormSubmit(form, submitLogin) }
 </script>
