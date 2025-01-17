@@ -7,6 +7,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    Admin: typeof import('./components/pages/admin/index.vue')['default']
     AnimatedHeadline: typeof import('./components/text/AnimatedHeadline.vue')['default']
     AppFooter: typeof import('./components/layout/AppFooter.vue')['default']
     AppNavBar: typeof import('./components/layout/AppNavBar.vue')['default']
