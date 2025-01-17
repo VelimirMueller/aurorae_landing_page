@@ -1,6 +1,6 @@
 
 <template>
-  <v-row class="position-relative ga-2 ga-md-8 d-flex justify-center opacity-bg">
+  <v-row class="ga-2 ga-md-8 d-flex justify-center opacity-bg">
     <v-col 
       cols="11" 
       sm="10"

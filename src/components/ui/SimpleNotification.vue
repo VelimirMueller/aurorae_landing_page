@@ -5,7 +5,7 @@
         <v-col
           cols="12"
           class="d-flex h-100">
-          <div class="mt-auto">
+          <div class="mt-auto position-relative">
             <template 
               v-for="(notification, idx) in notifications" 
               :key="idx">

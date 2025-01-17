@@ -6,8 +6,8 @@
         aria-label="Main navigation">
         <AppNavBar />
       </nav>
-      <SimpleNotification message="notification" />
       <div class="app__wrapper--content">
+        <SimpleNotification />
         <div>
           <router-view />
           <AppFooter />
