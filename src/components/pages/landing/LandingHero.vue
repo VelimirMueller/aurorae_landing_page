@@ -34,7 +34,7 @@
         <img 
           class="w-100 hero-img w-lg-75"
           src="../../../assets/heroimage.webp" 
-          alt="AI generated image of a girl with an analyzer screen">
+          alt="AI generated girl with an analyzer screen">
       </div>
     </div>
   </div>
