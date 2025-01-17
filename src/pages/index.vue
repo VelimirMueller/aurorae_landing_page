@@ -16,7 +16,7 @@
       <h2 class="mx-2 mx-md-0 text-textDark text-h3 text-md-h3 text-lg-h2 text-left text-md-center py-4 px-4 border-t-lg border-b-lg border-primary">
         Better<span class="text-secondary"> AI </span>Experience with<span class="text-secondary"> Aurorae </span>
       </h2>
-    </MainHeadline>>
+    </MainHeadline>
     
     <LandingCards />
   </section>
@@ -137,7 +137,9 @@
         <template 
           v-for="description in iconDescriptionsDashboard" 
           :key="description.id">
-          <TextIcon :description="description" />
+          <TextIcon 
+            :description="description" 
+            text-color="white" />
         </template>
       </template>
 
