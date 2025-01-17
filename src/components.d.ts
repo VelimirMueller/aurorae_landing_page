@@ -24,6 +24,7 @@ declare module 'vue' {
     LogoLine: typeof import('./components/LogoLine.vue')['default']
     MainHeadline: typeof import('./components/text/MainHeadline.vue')['default']
     MobileMenu: typeof import('./components/layout/MobileMenu.vue')['default']
+    PricingCard: typeof import('./components/PricingCard.vue')['default']
     RegisterForm: typeof import('./components/pages/signin/Loginform/partials/RegisterForm.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

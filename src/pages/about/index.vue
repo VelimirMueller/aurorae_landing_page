@@ -1,7 +1,7 @@
 <template>
   <section class="bg-primary text-white min-h d-flex dots-white">
     <BackgroundLogo />
-    <v-row class="d-flex align-start justify-center opacity-bg">
+    <v-row class="d-flex align-start justify-center opacity-bg w-100">
       <v-col 
         cols="12"
         md="8">

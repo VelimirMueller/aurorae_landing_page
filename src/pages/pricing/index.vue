@@ -9,8 +9,8 @@
         <div class="text-h6 w-100 h-100">
           <MainHeadline headline="Pricing" />
 
-          <div class="d-flex w-100 ga-2 h-75 mt-4">
-            <v-row>
+          <div class="d-flex w-100 ga-4 h-75 mt-4 pb-6 pt-2">
+            <v-row class="pb-12">
               <template 
                 v-for="feature in features"
                 :key="feature.id">
@@ -19,50 +19,7 @@
                   lg="4"
                   md="4" 
                   sm="6">
-                  <v-card 
-                    color="primary"
-                    :class="`border-lg border-${feature.color} pa-2 rounded-lg card`">
-                    <v-chip
-                      class="outline-lg outline-white mb-4 mt-2"
-                      :color="feature.color"
-                      size="x-large">
-                      {{ feature.name }}
-                    </v-chip>
-                    <v-list class="bg-white rounded-lg d-flex flex-column  list">
-                      <v-list-item :class="`mb-2 border-b-lg border-${feature.color} pb-2`">
-                        <h3 class="text-h3 font-weight-bold mt-4">
-                          {{ `${feature.price} ${feature.currency}` }}
-                          <span class="text-subtitle-2 font-weight-bold">
-                            {{ feature.interval }}
-                          </span>
-                        </h3>
-                      </v-list-item>
-
-                      <template
-                        v-for="label in feature.labels"
-                        :key="label">
-                        <v-list-item class="d-flex align-center">
-                          <v-icon 
-                            class="icon"
-                            :color="feature.color">
-                            {{ feature.icon }}
-                          </v-icon>
-                          <span class="ml-2 text-textDark text-h6 pt-1">{{ label }}</span>
-                        </v-list-item>
-                      </template>
-                    </v-list>
-
-                    <div class="w-100 d-flex justify-start mt-4">
-                      <v-btn 
-                        class="w-100 rounded-lg"
-                        size="x-large" 
-                        :color="feature.color"
-                        :href="`/products/${feature.id}`"
-                        variant="outlined">
-                        Choose
-                      </v-btn>
-                    </div>
-                  </v-card>
+                  <PricingCard :feature="feature" />
                 </v-col>
               </template>
             </v-row>
@@ -135,13 +92,5 @@ const features: Feature[] = [
 <style scoped>
 .min-h {
   min-height: 90vh;
-}
-
-.card {
-  min-height: 500px;
-}
-
-.list {
-  min-height: 400px;
 }
 </style>

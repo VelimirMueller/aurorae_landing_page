@@ -6,12 +6,12 @@
     <!-- Logo und Titel -->
     <v-row 
       align="center" 
-      class="ml-4 pt-2 d-none d-sm-flex">
+      class="pt-2 d-flex">
       <a 
         href="/" 
-        class="position-absolute">
+        class="pa-4 position-absolute">
         <img 
-          src="../../assets/Logo.svg" 
+          src="@/assets/Logo.svg" 
           alt="Anwendugslogo">
       </a>
     </v-row>
