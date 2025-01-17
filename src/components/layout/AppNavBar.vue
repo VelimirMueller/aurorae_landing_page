@@ -37,7 +37,7 @@
     <v-btn 
       size="large"
       href="/signin"
-      class="mr-4 btn-outline-highlight"
+      class="mr-4 text-white border-t-lg border-b-lg border-info"
       text="sign in" />
     <MobileMenu :links="links" />
   </v-app-bar>
@@ -55,16 +55,3 @@ const links: LinkElement[] = [
   { href: '/wiki', label: 'Wiki' }
 ]
 </script>
-
-<style lang="scss" scoped>
-  .btn-outline-highlight {
-    color: #fff;
-    width: 90px;
-  }
-
-  @media screen and (max-width: 1200px) {
-    .link-container {
-      padding: 0;
-    }
-  }
-</style>

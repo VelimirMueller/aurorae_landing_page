@@ -13,16 +13,21 @@
           <span class="text-secondary">empowered</span> tooling.
         </h2>
       </div>
-      <button 
-        class="btn-outline relative mb-n15 bg-white text-primary">
-        <span class="headline-highlight-cta">Try</span>Out
-        <v-icon
-          color="secondary"
-          size="x-small"
-          class="mb-2 icon">
-          mdi-gesture-double-tap
-        </v-icon>
-      </button>
+      <v-row class="d-flex justify-center px-1">
+        <v-col cols="12" md="6">
+          <v-btn
+            class="mb-n8 btn-outline-highlight text-primary text-h4 h-auto rounded-lg px-12 w-100 bg-white border-t-lg border-secondary"
+            href="/signin">
+            Explore now!
+            <v-icon
+              color="info"
+              size="x-large"
+              class="mb-2 icon">
+              mdi-gesture-double-tap
+            </v-icon>
+          </v-btn>
+        </v-col>
+      </v-row>
       <div clss="w-100">
         <img 
           class="w-100 hero-img w-lg-75"
@@ -34,7 +39,6 @@
 </template>
 
 <style lang="scss" scoped>
-
   .headline-highlight {
     border: solid 4px rgb(var(--v-theme-secondary));
     border-radius: 25px;
@@ -47,69 +51,6 @@
     &:last-child {
       animation: anim 5s infinite;
       animation-delay: 0.5s;
-    }
-
-    &-cta::after {
-      content: '';
-      width: 70%;
-      height: 80%;
-      position: absolute;
-      left: 15%;
-      top: 10%;
-      border-radius: 8px;
-    }
-  }
-
-  h2 {
-    padding: 0 110px;
-    line-height: normal;
-    text-align: center;
-  }
-
-  .hero-img {
-    border: solid 4px rgb(var(--v-theme-secondary));
-    border-radius: 8px;
-    padding: 0;
-  }
-
-  @media screen and (min-width:971px) and (max-width: 1200px) {
-    .hero-img {
-      width: 80%;
-    }
-  }
-
-  @media screen and (max-width:970px) {
-    .hero-img {
-      width: 100%;
-    }
-
-    h2 {
-      padding: 5px;
-      text-align: left;
-    }
-
-    .hero-img {
-      width: 100%;
-    }
-  }
-
-  .relative {
-    position: relative;
-  }
-
-  @media screen and (max-width: 600px) {
-    .relative {
-      margin: 20px 0;
-    }
-
-    .btn-outline, .hero-img {
-      width: 98%;
-    }
-
-    .hero-img {
-      margin-top: -45px;
-      border: none;
-      border-radius: 0px;
     }
   }
 </style>

@@ -1,13 +1,14 @@
 <template>
   <section class="bg-primary pa-0 d-flex align-center flex-column dots-white">
     <BackgroundLogo />
-    <MainHeadline 
+    <MainHeadline
+      class="opacity-bg"
       headline="Products"
       text-light />
     <template 
       v-for="product in products" 
       :key="product.id">
-      <v-row class="d-flex justify-center pb-4 w-100 h-100 position-relative rounded-lg">
+      <v-row class="d-flex justify-center pb-4 w-100 h-100 position-relative rounded-lg opacity-bg">
         <v-col
           cols="12"
           sm="8"

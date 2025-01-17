@@ -30,7 +30,8 @@ export default createVuetify({
           textDark: '#3c3c3c',
           textLight: '#D9D9D9',
           white: '#fff',
-          grey: '#9a9a9a'
+          grey: '#9a9a9a',
+          opacityWhite: '#ffffff',
         },
       },
     }
