@@ -25,7 +25,7 @@
     <v-text-field
       v-model="password"
       :counter="25"
-      autocomplete="password"
+      autocomplete="new-password"
       label="password*"
       :rules="passwordRules"
       hint="Minimum 6 characters"
@@ -33,7 +33,7 @@
       required />
     <v-text-field
       v-model="passwordRepeat"
-      autocomplete="password"
+      autocomplete="new-password"
       :counter="25"
       type="password"
       :rules="passwordRules"
