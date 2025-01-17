@@ -14,7 +14,9 @@
         </h2>
       </div>
       <v-row class="d-flex justify-center px-1">
-        <v-col cols="12" md="6">
+        <v-col
+          cols="12"
+          md="6">
           <v-btn
             class="mb-n8 btn-outline-highlight text-primary text-h4 h-auto rounded-lg px-12 w-100 bg-white border-t-lg border-secondary"
             href="/signin">

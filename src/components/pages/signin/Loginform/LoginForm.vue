@@ -7,7 +7,7 @@
       md="5"
       lg="4"
       class="bg-white border-thin rounded-lg border-accent pa-8 opacity-100">
-      <RegisterForm class="opacity-100" />
+      <RegisterForm />
     </v-col>
       
     <v-col 

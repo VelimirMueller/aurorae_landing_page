@@ -29,6 +29,7 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SignInForm: typeof import('./components/pages/signin/Loginform/partials/SignInForm.vue')['default']
+    SimpleNotification: typeof import('./components/ui/SimpleNotification.vue')['default']
     TextIcon: typeof import('./components/text/TextIcon.vue')['default']
   }
 }
