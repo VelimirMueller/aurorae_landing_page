@@ -8,7 +8,7 @@
     @submit.prevent>
     <v-text-field
       v-model="emailAddress"
-      autocomplete="email"
+      type="email"
       class="rounded-lg"
       :rules="emailRules"
       hint="example@emailaddress.com"
@@ -17,7 +17,6 @@
     <v-text-field
       v-model="password"
       :counter="25"
-      autocomplete="password"
       label="password"
       :rules="passwordRules"
       hint="Minimum 6 characters"

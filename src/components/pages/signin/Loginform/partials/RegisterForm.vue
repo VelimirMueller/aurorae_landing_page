@@ -17,7 +17,6 @@
       required />
     <v-text-field
       v-model="emailAddress"
-      autocomplete="email"
       :rules="emailRules"
       hint="example@emailaddress.com"
       label="e-mail*"
@@ -27,6 +26,7 @@
       v-model="password"
       :counter="25"
       label="password*"
+      autocomplete="new-password"
       :rules="passwordRules"
       hint="Minimum 6 characters"
       type="password"
@@ -35,6 +35,7 @@
       v-model="passwordRepeat"
       :counter="25"
       type="password"
+      autocomplete="new-password"
       :rules="passwordRules"
       hint="Minimum 6 characters"
       label="repeat password*"
