@@ -9,7 +9,7 @@
     @submit.prevent>
     <v-text-field
       v-model="userName"
-      autocomplete="username"
+      type="text"
       :rules="nameRules"
       hint="only letters"
       :counter="25"
@@ -21,11 +21,11 @@
       :rules="emailRules"
       hint="example@emailaddress.com"
       label="e-mail*"
+      type="email"
       required />
     <v-text-field
       v-model="password"
       :counter="25"
-      autocomplete="new-password"
       label="password*"
       :rules="passwordRules"
       hint="Minimum 6 characters"
@@ -33,7 +33,6 @@
       required />
     <v-text-field
       v-model="passwordRepeat"
-      autocomplete="new-password"
       :counter="25"
       type="password"
       :rules="passwordRules"
