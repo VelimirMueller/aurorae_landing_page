@@ -6,7 +6,7 @@ type NotificationType = 'success' | 'error' | 'warning' | 'info'
 
 export const useAppStore = defineStore('app', {
   state: () => ({
-    notifications: [] as Notification[],
+    notifications: [] as Notification[]
   }),
 
   actions: {

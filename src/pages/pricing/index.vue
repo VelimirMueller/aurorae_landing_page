@@ -84,10 +84,9 @@ const features: Feature[] = [
     icon: 'mdi-check-decagram-outline',
     interval: '/per month',
     color: 'accent'
-  },
+  }
 ]
 </script>
-
 
 <style scoped>
 .min-h {

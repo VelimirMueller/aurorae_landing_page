@@ -54,7 +54,7 @@
 </template>
 
 <script lang="ts" setup>
-import { emailRules, passwordRules } from '../../../../../utils/formRules'
+import { emailRules, passwordRules } from '@/utils/formRules'
 import type { VuetifyFormElement } from '@/composables/useForms'
 import { submit, validateFormSubmit } from '@/composables/useForms'
 

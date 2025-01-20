@@ -19,6 +19,7 @@ const iconDescriptionsChat: {id: number, text: string, icon: string}[] = [
 const iconDescriptionsImage: {id: number, text: string, icon: string}[] = [
   { id: 0, text: 'Classify your images automatically.', icon: 'mdi-image-multiple-outline' },
   { id: 1, text: 'Handle your product images with AI.', icon: 'mdi-image-multiple-outline' },
+
   { id: 0, text: 'Model can be refined with Aurorae Trainer', icon: 'mdi-image-multiple-outline' }
 ]
 

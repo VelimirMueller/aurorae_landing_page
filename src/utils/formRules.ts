@@ -18,5 +18,5 @@ export const emailRules = [
     if (/.+@.+\..+/.test(value)) return true
 
     return 'E-mail must be valid.'
-  },
+  }
 ]

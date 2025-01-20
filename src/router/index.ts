@@ -13,7 +13,7 @@ import { type Store, storeToRefs } from 'pinia'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: setupLayouts(routes),
+  routes: setupLayouts(routes)
 })
 
 const protectedRoutes = ['/admin', '/public']
@@ -36,7 +36,6 @@ router.onError((err, to) => {
 router.isReady().then(() => {
   localStorage.removeItem('vuetify:dynamic-reload')
 })
-
 
 router.beforeEach((to, from, next) => {
   // @ts-expect-error - pinia type error

@@ -6,9 +6,9 @@
       size="x-large">
       {{ description.icon }}
     </v-icon>
-    <p class="pl-2 text-h5 w-66">
+    <span class="pl-2 text-h5 w-66">
       {{ description.text }}
-    </p>
+    </span>
   </span>
 </template>
 

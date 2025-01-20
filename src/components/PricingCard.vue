@@ -76,7 +76,7 @@ const { id, color, name, price, currency, labels, icon, interval } = props.featu
 }
 
 .shadow-box {
-  box-shadow: 0px 1px 1px rgb(var(--v-theme-info));
+  box-shadow: 0 1px 1px rgb(var(--v-theme-info));
 
   &:hover {
     background-color: rgb(var(--v-theme-white))!important;

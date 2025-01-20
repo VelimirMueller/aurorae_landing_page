@@ -41,5 +41,6 @@
     "vite-plugin-vuetify": "^2.0.3",
     "vue-router": "^4.4.0",
     "vue-tsc": "^2.1.10"
-  }
+  },
+  "web-types": "https://raw.githubusercontent.com/JetBrains/web-types/master/schema/web-types.json"
 }

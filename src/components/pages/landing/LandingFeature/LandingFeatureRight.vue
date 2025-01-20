@@ -9,9 +9,9 @@
         color="accent">
         mdi-checkbox-marked-circle-auto-outline
       </v-icon>
-      <p class="w-70 w-md-100 text-h5 text-lg-h4">
+      <span class="w-70 w-md-100 text-h5 text-lg-h4">
         {{ iconTexts[0].text }} <span class="highlight-text">{{ iconTexts[0].highlightText }}</span>
-      </p>
+      </span>
     </span>
   </v-col>
 
@@ -25,9 +25,9 @@
         color="accent">
         mdi-checkbox-marked-circle-auto-outline
       </v-icon>
-      <p class="w-70 w-md-100 text-h5 text-lg-h4">
+      <span class="w-70 w-md-100 text-h5 text-lg-h4">
         {{ iconTexts[1].text }} <span class="highlight-text">{{ iconTexts[1].highlightText }}</span>
-      </p>
+      </span>
     </span>
   </v-col>
 
@@ -41,9 +41,9 @@
         color="accent">
         mdi-checkbox-marked-circle-auto-outline
       </v-icon>
-      <p class="w-70 w-md-100 text-h5 text-lg-h4">
+      <span class="w-70 w-md-100 text-h5 text-lg-h4">
         {{ iconTexts[2].text }} <span class="highlight-text">{{ iconTexts[2].highlightText }}</span>
-      </p>
+      </span>
     </span>
   </v-col>
 </template>

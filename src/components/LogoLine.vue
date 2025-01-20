@@ -33,18 +33,18 @@ const features: {id: number, text: string, icon: string}[] = [
   }
 
   p {
-    color: rgb(var(--v-theme-textLight));
     font-size: 2rem;
     font-weight: 400;
     width: 100%;
     height: 110px;
-    padding: 10px;
     margin: 5px;
-    border-left: solid 2px white;
-    border-right: solid 2px white;
-    border-radius: 25px;
-    stroke: solid 1px white;
+    padding: 10px;
     animation: anim 5s infinite;
+    color: rgb(var(--v-theme-textLight));
+    border-right: solid 2px white;
+    border-left: solid 2px white;
+    border-radius: 25px;
+    stroke: rgb(var(--v-theme-white));
   }
 
   @media screen and (max-width: 1200px) {

@@ -23,7 +23,7 @@ defineProps({
   borderColor: {
     type: String,
     required: false,
-    default: 'border-white',
+    default: 'border-white'
   }
 })
 </script>

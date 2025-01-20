@@ -30,7 +30,7 @@
           </v-btn>
         </v-col>
       </v-row>
-      <div clss="w-100">
+      <div class="w-100">
         <img 
           class="w-100 hero-img w-lg-75"
           src="../../../assets/heroimage.webp" 

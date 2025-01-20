@@ -31,9 +31,9 @@ export default createVuetify({
           textLight: '#D9D9D9',
           white: '#fff',
           grey: '#9a9a9a',
-          opacityWhite: '#ffffff',
-        },
-      },
+          opacityWhite: '#ffffff'
+        }
+      }
     }
   }
 })

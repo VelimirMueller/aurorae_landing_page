@@ -29,6 +29,7 @@ export default [
       'eol-last': ['error', 'always'],
       'comma-dangle': ['error', 'never'],
       '@typescript-eslint/no-explicit-any': 'off',
+      'no-multiple-empty-lines': ['error', { max: 1 }],
       '@typescript-eslint/no-unused-expressions': [
         'error',
         {
