@@ -24,7 +24,7 @@ export default [
   {
     rules: {
       'object-curly-spacing': ['error', 'always'],
-      'newline-before-return': 'error',
+      'newline-before-return': 'error2',
       'indent': ['error', 2],
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-unused-expressions': [
