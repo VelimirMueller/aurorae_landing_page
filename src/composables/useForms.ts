@@ -1,10 +1,16 @@
-import { useAppStore } from "@/stores/app"
+import {useAppStore} from "@/stores/app"
+import {useAuthenticationStore} from '@/stores/authentication'
+import {type Store} from 'pinia'
+import router from '@/router'
 
 const appStore = useAppStore()
+const authStore = useAuthenticationStore() as unknown as Store<'authentication', { setIsAuthenticated: any }>
 const { addNotification } = appStore
+const {setIsAuthenticated} = authStore
 
 export interface VuetifyFormElement extends HTMLFormElement {
   validate: () => Promise<{ valid: boolean }>
+  
   reset: () => never
 }
 
@@ -39,11 +45,16 @@ export const submit = (isLoading: Ref<boolean>, payload: Ref<object>, endpoint: 
     body: JSON.stringify(payload.value)
   })
     .then(async (response) => {
+
       if (response?.ok) {
-        window.location.href = redirectRoute
+        setIsAuthenticated('true')
+        await router.push(redirectRoute)
       } else {
         const res = await response.json()
+
         addNotification({ text: `Error: ${res.message}`, type: 'error' })
+        setIsAuthenticated('false')
+
         console.error(`Error with response from ${endpoint} (method: POST) - status: ${response.status} statusText: ${response.statusText}`)
       }
     })
@@ -52,6 +63,7 @@ export const submit = (isLoading: Ref<boolean>, payload: Ref<object>, endpoint: 
     })
   } catch (err) {
     addNotification({ text: `Error submitting form, check console for more info.`, type: 'error' })
+
     console.error('error:', err)
   }
 }
