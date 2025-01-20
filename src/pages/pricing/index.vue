@@ -8,7 +8,6 @@
         class="d-flex align-center py-4">
         <div class="text-h6 w-100 h-100">
           <MainHeadline headline="Pricing" />
-
           <div class="d-flex w-100 ga-4 h-75 mt-4 pb-6 pt-2">
             <v-row class="pb-12">
               <template 
@@ -29,7 +28,6 @@
     </v-row>
   </section>
 </template>
-
 <script setup lang="ts">
 interface Feature {
   id: number
@@ -41,7 +39,6 @@ interface Feature {
   interval: string,
   color: string
 }
-
 const features: Feature[] = [
   {
     id: 0,
@@ -87,7 +84,6 @@ const features: Feature[] = [
   }
 ]
 </script>
-
 <style scoped>
 .min-h {
   min-height: 90vh;

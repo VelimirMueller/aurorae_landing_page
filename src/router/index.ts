@@ -3,7 +3,6 @@
  *
  * Automatic routes for `./src/pages/*.vue`
  */
-
 // Composables
 import { createRouter, createWebHistory } from 'vue-router/auto'
 import { setupLayouts } from 'virtual:generated-layouts'
@@ -15,9 +14,7 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: setupLayouts(routes)
 })
-
 const protectedRoutes = ['/admin', '/public']
-
 // Workaround for https://github.com/vitejs/vite/issues/11804
 router.onError((err, to) => {
   if (err?.message?.includes?.('Failed to fetch dynamically imported module')) {
@@ -32,17 +29,14 @@ router.onError((err, to) => {
     console.error(err)
   }
 })
-
 router.isReady().then(() => {
   localStorage.removeItem('vuetify:dynamic-reload')
 })
-
 router.beforeEach((to, from, next) => {
   // @ts-expect-error - pinia type error
   const authStore = useAuthenticationStore() as Store<"authentication", { isAuthenticated: boolean }>
   const { isAuthenticated } = storeToRefs(authStore)
   isAuthenticated.value = sessionStorage.getItem('isAuthenticated') === 'true'
-
   if (protectedRoutes.some(route => to.path.startsWith(route))) {
     if (!isAuthenticated) {
       next({ path: '/signin' })
@@ -54,5 +48,4 @@ router.beforeEach((to, from, next) => {
     next()
   }
 })
-
 export default router

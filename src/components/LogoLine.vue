@@ -15,7 +15,6 @@
     </template>
   </div>
 </template>
-
 <script setup lang="ts">
 const features: {id: number, text: string, icon: string}[] = [
   { id: 0, text: 'CHAT', icon: 'mdi-chat-processing-outline' }, 
@@ -23,7 +22,6 @@ const features: {id: number, text: string, icon: string}[] = [
   { id: 2, text: 'DATA', icon: 'mdi-arrow-top-right-bold-box-outline' }
 ]
 </script>
-
 <style scoped lang="scss">
   .icon {
     transform: scale(2);
@@ -31,7 +29,6 @@ const features: {id: number, text: string, icon: string}[] = [
     position: absolute;
     opacity: 90%;
   }
-
   p {
     font-size: 2rem;
     font-weight: 400;
@@ -46,17 +43,13 @@ const features: {id: number, text: string, icon: string}[] = [
     border-radius: 25px;
     stroke: rgb(var(--v-theme-white));
   }
-
   @media screen and (max-width: 1200px) {
     .icon {
     transform: scale(1);
   }
-
   p {
     font-size: 1rem;
     height: 64px;
   }
-
   }
-
 </style>

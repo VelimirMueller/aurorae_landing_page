@@ -11,7 +11,6 @@
     </v-row>
   </div>
 </template>
-
 <script setup lang="ts">
 defineProps({
   headline: {
@@ -19,7 +18,6 @@ defineProps({
     required: false,
     default: ''
   },
-
   borderColor: {
     type: String,
     required: false,

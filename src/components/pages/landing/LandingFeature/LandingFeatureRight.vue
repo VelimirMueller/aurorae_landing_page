@@ -14,7 +14,6 @@
       </span>
     </span>
   </v-col>
-
   <v-col 
     cols="12" 
     class="d-flex justify-start">
@@ -30,7 +29,6 @@
       </span>
     </span>
   </v-col>
-
   <v-col 
     cols="12" 
     class="d-flex justify-start">
@@ -47,7 +45,6 @@
     </span>
   </v-col>
 </template>
-
 <script setup lang="ts">
 import type { PropType } from 'vue'
 
@@ -55,7 +52,6 @@ type IconText = {
   text: string,
   highlightText: string
 }
-
 defineProps({
   iconTexts: {
     type: Array as PropType<IconText[]>,

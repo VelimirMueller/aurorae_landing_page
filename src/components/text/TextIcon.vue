@@ -11,7 +11,6 @@
     </span>
   </span>
 </template>
-
 <script setup lang=ts>
   type Description = { icon: string, text: string }
 defineProps({
@@ -19,7 +18,6 @@ defineProps({
     type: Object as PropType<Description>,
     required: true
   },
-
   textColor: {
     type: String,
     required: false,

@@ -10,18 +10,15 @@
     </v-col>
   </v-row>
 </template>
-
 <script setup lang="ts">
 defineProps({
   subheadline: {
     type: String,
     required: true
   },
-
   featureText: {
     type: String,
     required: true
   }
 })
 </script>
-

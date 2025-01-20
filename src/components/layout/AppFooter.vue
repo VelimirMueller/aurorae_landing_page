@@ -15,7 +15,6 @@
     </v-row>
   </v-footer>
 </template>
-
 <script setup lang="ts">
 const links = [
   '/about',
@@ -24,4 +23,3 @@ const links = [
   '/wiki'
 ]
 </script>
-

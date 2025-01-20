@@ -33,7 +33,6 @@
     </v-row>
   </div>
 </template>
-
 <script setup lang="ts">
 type Card = {
   id: number,
@@ -73,7 +72,6 @@ const cards: Card[] = [
   }
 ]
 </script>
-
 <style scoped lang="scss">
 .card {
   height: 100%;
@@ -81,14 +79,11 @@ const cards: Card[] = [
   color: rgb(var(--v-theme-primary));
   transition: all 175ms ease-in;
 }
-
 .card:hover{
   background-color: rgb(var(--v-theme-primary));
   color: rgb(var(--v-theme-white));
-
   .v-card-actions > div {
     background-color: rgb(var(--v-theme-primary))!important;
-
     & > * {
       color: rgb(var(--v-theme-white));
     }

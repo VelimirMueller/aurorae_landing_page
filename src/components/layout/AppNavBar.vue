@@ -15,7 +15,6 @@
           alt="Anwendugslogo">
       </a>
     </v-row>
-
     <!-- Navigationselemente -->
     <v-spacer class="d-none d-md-block" />
     <v-container class="d-flex justify-center link-container">
@@ -32,7 +31,6 @@
       </div>
     </v-container>
     <v-spacer class="d-none d-md-block" />
-
     <!-- Rechtsausgerichtete Elemente -->
     <v-btn 
       size="large"
@@ -42,7 +40,6 @@
     <MobileMenu :links="links" />
   </v-app-bar>
 </template>
-
 <script setup lang="ts">
 type LinkElement = {
   href: string, 

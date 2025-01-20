@@ -6,7 +6,6 @@
       class="my-auto icon">
       <slot name="left" />
     </v-col>
-
     <v-col 
       cols="12" 
       md="6" 
@@ -15,7 +14,6 @@
     </v-col>
   </v-row>
 </template>
-
 <script setup lang="ts">
 defineProps({
   isReverse: {

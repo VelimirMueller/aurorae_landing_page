@@ -52,7 +52,6 @@
     </div>
   </v-form>
 </template>
-
 <script lang="ts" setup>
 import { emailRules, passwordRules } from '@/utils/formRules'
 import type { VuetifyFormElement } from '@/composables/useForms'
@@ -64,15 +63,12 @@ type SignInFormFields = {
   }
 const emailAddress: Ref<string> = ref('')
 const password: Ref<string> = ref('')
-
 const payload = ref({
   emailAddress,
   password
 }) as unknown as Ref<SignInFormFields> 
-
 const form: Ref<VuetifyFormElement|undefined> = ref()
 const isLoading: Ref<boolean> = ref(false)
-
 const submitLogin = () => submit(isLoading, payload, '/api/v1/login', '/public')
 const login = () => { validateFormSubmit(form, submitLogin) }
 </script>

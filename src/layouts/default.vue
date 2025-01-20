@@ -16,12 +16,11 @@
     </v-main>
   </v-app>
 </template>
-
 <style lang="scss" scoped>
   .app__wrapper--content {
     width: 100%;
     height: 100%;
     padding: 0 10px;
-    background-color: none;
+    background-color: #ffffff00;
   }
 </style>

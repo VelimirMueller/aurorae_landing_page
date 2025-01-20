@@ -13,7 +13,6 @@
           </v-icon>
         </v-btn>
       </template>
-
       <!-- Side Menu with navigation links -->
       <div class="d-flex d-lg-none flex-column ga-8 px-14 py-12 bg-primary">
         <template 
@@ -26,7 +25,6 @@
             {{ link.label }}
           </v-btn>
         </template>
-        
         <div class="d-flex align-center h-100 w-60">
           <a
             class="mt-auto w-100"
@@ -41,7 +39,6 @@
     </v-menu>
   </div>
 </template>
-
 <script setup lang="ts">
 import type { PropType } from 'vue'
 import { defineProps } from 'vue'
@@ -50,7 +47,6 @@ type LinkElement = {
   href: string,
   label: string
 }
-
 defineProps({
   links: {
     type: Array as PropType<LinkElement[]>,
@@ -59,7 +55,6 @@ defineProps({
   }
 })
 </script>
-
 <style lang="scss" scoped>
 .link {
   width: 100%;

@@ -29,7 +29,6 @@
             :items="products.map(prod => prod.product).filter(prod => prod.name === product.product.name)"
             hide-default-footer />
         </v-col>
-
         <v-col
           cols="12"
           sm="8"
@@ -39,7 +38,6 @@
             class="w-100 h-100 opacity-100"
             alt="">
         </v-col>
-
         <v-col
           cols="12"
           sm="8">
@@ -56,7 +54,6 @@
     </template>
   </section>
 </template>
-
 <script setup lang="ts">
 interface Product {
   id: number
@@ -69,43 +66,35 @@ interface Product {
     pageHref: string
   }
 }
-
 const products: Product[] = [
   { id: 0, image: '/chat.webp', product: { name: 'Aurorae Chat', technology: 'GPT4ALL', description: 'AI Chatbot which can be used to solve a lot of analytical questions.', useCase: 'Multi-talent', pageHref: '#chat' } },
   { id: 1, image: '/img.webp', product: { name: 'Aurorae Image', technology: 'TensorFlow',  description: 'Image Classifier, could be used for a web shop to handle products more easy and more efficient.', useCase: 'Timesaver', pageHref: '#images' } },
   { id: 2, image: '', product: { name: 'Dashboard', technology: 'Vuetify',  description: 'All your relevant data and actions in one place beautifully designed for a smooth work session.', useCase: 'Administration', pageHref: '#dashboard' } },
   { id: 3, image: '', product: { name: 'Model Trainer', technology: 'TensorFlow',  description: 'Refine your model to fit your specific needs more or create more models based on your existing ones for more specific use cases.', useCase: 'Refine Chatbot or Image classifier to adjust to your specific needs.', pageHref: '#trainer' } }
 ]
-
 onMounted(() => {
   setTimeout(() => {
     const htmlElement = document.getElementById(`${window.location.href.split('#')[1]}`)
     htmlElement?.scrollIntoView()
   }, 10)
 })
-
 </script>
-
 <style lang="scss" scoped>
 th {
   background-color: rgb(var(--v-theme-white));
   border-color: rgb(var(--v-theme-accent));
 }
-
 table tbody {
   background-color: rgb(var(--v-theme-white));
   border: solid 2px rgb(var(--v-theme-accent));
 }
-
 table tbody:hover {
   background-color: rgb(var(--v-theme-primary))!important;
   color: rgb(var(--v-theme-white));
 }
-
 .v-data-table__td:hover {
   color: rgb(var(--v-theme-accent))!important;
 }
-
 .text-container {
   background-image: url("../../assets/gradient.webp");
 }

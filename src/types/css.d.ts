@@ -2,7 +2,6 @@ declare module '*.scss' {
   const content: { [className: string]: string };
   export default content;
 }
-
 declare module 'vuetify/styles' {
   export const variables: {
     '--v-theme-white': string

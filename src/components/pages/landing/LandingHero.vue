@@ -39,17 +39,14 @@
     </div>
   </div>
 </template>
-
 <style lang="scss" scoped>
   .headline-highlight {
     border: solid 4px rgb(var(--v-theme-secondary));
     border-radius: 25px;
     padding: 0 5px;
-
     &:first-child {
       animation: anim 7s infinite alternate;
     }
-
     &:last-child {
       animation: anim 5s infinite;
       animation-delay: 0.5s;

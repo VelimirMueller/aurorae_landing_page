@@ -23,7 +23,6 @@
     </div>
   </div>
 </template>
-
 <script setup lang="ts">
 import { useAppStore } from '@/stores/app'
 import { storeToRefs } from 'pinia';
@@ -31,34 +30,27 @@ import { storeToRefs } from 'pinia';
 const appStore = useAppStore()
 const { notifications } = storeToRefs(appStore)
 </script>
-
 <style lang="scss" scoped>
   .h-90 {
     height: 85%;
   }
-
   .fadeOutAnimation {
     animation: fadeOut 10s ease-out;
     opacity: 0;
   }
-
   @keyframes fadeOut {
     0% {
       opacity: 1;
     }
-
     50% {
       opacity: 0.75;
     }
-
     75% {
       opacity: 0.4;
     }
-
     85% {
       opacity: 0.2;
     }
-
     100% {
       opacity: 0;
     }

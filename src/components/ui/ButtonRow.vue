@@ -11,7 +11,6 @@
         size="x-large"
         text="find out more" />
     </v-col>
-
     <v-col
       cols="12"
       md="6"
@@ -25,7 +24,6 @@
     </v-col>
   </v-row>
 </template>
-
 <script setup lang="ts">
 defineProps({
   href: {

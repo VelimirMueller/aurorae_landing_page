@@ -10,7 +10,6 @@
     </v-col>
   </v-row>
 </template>
-
 <script setup lang="ts">
 defineProps({
   headline: {
@@ -18,7 +17,6 @@ defineProps({
     required: false,
     default: ''
   },
-
   textLight: {
     type: Boolean,
     required: false,

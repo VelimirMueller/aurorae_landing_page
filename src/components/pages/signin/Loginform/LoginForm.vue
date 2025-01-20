@@ -1,4 +1,3 @@
-
 <template>
   <v-row class="ga-2 ga-md-8 d-flex justify-center opacity-bg">
     <v-col 
@@ -9,7 +8,6 @@
       class="bg-white border-thin rounded-lg border-accent pa-8 opacity-100">
       <RegisterForm />
     </v-col>
-      
     <v-col 
       cols="11" 
       sm="10"

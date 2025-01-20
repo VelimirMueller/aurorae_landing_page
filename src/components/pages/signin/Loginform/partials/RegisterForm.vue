@@ -59,7 +59,6 @@
     </v-btn>
   </v-form>
 </template>
-
 <script lang="ts" setup>
 import { emailRules, nameRules, passwordRules } from '@/utils/formRules'
 import type { VuetifyFormElement } from '@/composables/useForms'
@@ -81,7 +80,6 @@ const payload = ref({
   password,
   passwordRepeat
 }) as unknown as Ref<RegisterFormFields>
-
 const form: Ref<VuetifyFormElement|undefined> = ref()
 const isLoading: Ref<boolean> = ref(false)  
 const submitRegister = () => submit(isLoading, payload, '/api/v1/register', '/public')

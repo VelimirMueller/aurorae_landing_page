@@ -17,7 +17,6 @@
           </span>
         </h3>
       </v-list-item>
-
       <template
         v-for="label in labels"
         :key="label">
@@ -31,7 +30,6 @@
         </v-list-item>
       </template>
     </v-list>
-
     <div class="w-100 d-flex justify-start mt-4">
       <v-btn 
         class="w-100 rounded-lg border-t-lg border-b-lg border-info bg-primary shadow-box"
@@ -42,7 +40,6 @@
     </div>
   </v-card>
 </template>
-
 <script lang="ts" setup>
 interface Feature {
   id: number
@@ -54,30 +51,23 @@ interface Feature {
   interval: string,
   color: string
 }
-
 const props = defineProps({
   feature: {
     type: Object as PropType<Feature>,
     required: true
   }
 })
-
 const { id, color, name, price, currency, labels, icon, interval } = props.feature
 </script>
-
 <style lang="scss" scoped>
-
 .card {
   min-height: 400px;
 }
-
 .list {
   min-height: 400px!important;
 }
-
 .shadow-box {
   box-shadow: 0 1px 1px rgb(var(--v-theme-info));
-
   &:hover {
     background-color: rgb(var(--v-theme-white))!important;
     color: rgb(var(--v-theme-accent))!important;
