@@ -17,11 +17,11 @@
 </template>
 
 <script setup lang="ts">
-  const features: {id: number, text: string, icon: string}[] = [
-    {id: 0, text: 'CHAT', icon: 'mdi-chat-processing-outline'}, 
-    {id: 1, text: 'IMAGES', icon: 'mdi-image-multiple-outline'},
-    {id: 2, text: 'DATA', icon: 'mdi-arrow-top-right-bold-box-outline'}
-  ]
+const features: {id: number, text: string, icon: string}[] = [
+  { id: 0, text: 'CHAT', icon: 'mdi-chat-processing-outline' }, 
+  { id: 1, text: 'IMAGES', icon: 'mdi-image-multiple-outline' },
+  { id: 2, text: 'DATA', icon: 'mdi-arrow-top-right-bold-box-outline' }
+]
 </script>
 
 <style scoped lang="scss">

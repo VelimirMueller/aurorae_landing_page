@@ -13,17 +13,17 @@
 </template>
 
 <script setup lang="ts">
-  defineProps({
-    headline: {
-      type: String,
-      required: false,
-      default: ''
-    },
+defineProps({
+  headline: {
+    type: String,
+    required: false,
+    default: ''
+  },
 
-    borderColor: {
-      type: String,
-      required: false,
-      default: 'border-white',
-    }
-  })
+  borderColor: {
+    type: String,
+    required: false,
+    default: 'border-white',
+  }
+})
 </script>

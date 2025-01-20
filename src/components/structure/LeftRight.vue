@@ -20,10 +20,10 @@
 </template>
 
 <script setup lang="ts">
-  defineProps({
-    ctaRoute: {
-      type: String,
-      required: true
-    }
-  })
+defineProps({
+  ctaRoute: {
+    type: String,
+    required: true
+  }
+})
 </script>

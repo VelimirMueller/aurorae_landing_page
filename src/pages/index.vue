@@ -186,14 +186,13 @@
 </template>
 
 <script setup lang="ts">
-import 
-  {
-    iconTextsChat,
-    iconTextsAi,
-    iconDescriptionsChat,
-    iconDescriptionsImage,
-    iconDescriptionsDashboard,
-    iconDescriptionsTrainer
+import {
+  iconDescriptionsChat,
+  iconDescriptionsDashboard,
+  iconDescriptionsImage,
+  iconDescriptionsTrainer,
+  iconTextsAi,
+  iconTextsChat
 } from '@/pages/landingPageData'
 import { useObserveIntersectionsAnimation } from '@/composables/useObserveIntersection'
 import LeftRightScalingImage from '@/components/structure/LeftRightScalingImage.vue';

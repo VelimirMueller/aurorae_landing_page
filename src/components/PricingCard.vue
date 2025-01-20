@@ -44,7 +44,7 @@
 </template>
 
 <script lang="ts" setup>
-  interface Feature {
+interface Feature {
   id: number
   name: string
   price: number
@@ -54,14 +54,15 @@
   interval: string,
   color: string
 }
-  const props = defineProps({
-    feature: {
-      type: Object as PropType<Feature>,
-      required: true
-    }
-  })
 
-  const { id, color, name, price, currency, labels, icon, interval } = props.feature
+const props = defineProps({
+  feature: {
+    type: Object as PropType<Feature>,
+    required: true
+  }
+})
+
+const { id, color, name, price, currency, labels, icon, interval } = props.feature
 </script>
 
 <style lang="scss" scoped>

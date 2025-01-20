@@ -14,16 +14,16 @@
 
 <script setup lang=ts>
   type Description = { icon: string, text: string }
-  defineProps({
-    description: {
-      type: Object as PropType<Description>,
-      required: true
-    },
+defineProps({
+  description: {
+    type: Object as PropType<Description>,
+    required: true
+  },
 
-    textColor: {
-      type: String,
-      required: false,
-      default: 'textDark'
-    }
-  })
+  textColor: {
+    type: String,
+    required: false,
+    default: 'textDark'
+  }
+})
 </script>

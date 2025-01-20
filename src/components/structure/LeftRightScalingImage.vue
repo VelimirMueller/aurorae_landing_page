@@ -17,11 +17,11 @@
 </template>
 
 <script setup lang="ts">
-  defineProps({
-    isReverse: {
-      type: Boolean,
-      required: false,
-      default: false
-    }
-  })
+defineProps({
+  isReverse: {
+    type: Boolean,
+    required: false,
+    default: false
+  }
+})
 </script>

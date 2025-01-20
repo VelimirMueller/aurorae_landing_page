@@ -9,14 +9,14 @@ export const passwordRules = [
 ]
   
 export const emailRules = [
-(value: string): boolean|string => {
-  if (value) return true
+  (value: string): boolean|string => {
+    if (value) return true
 
-  return 'E-mail is required.'
-},
-(value: string): boolean|string => {
-  if (/.+@.+\..+/.test(value)) return true
+    return 'E-mail is required.'
+  },
+  (value: string): boolean|string => {
+    if (/.+@.+\..+/.test(value)) return true
 
-  return 'E-mail must be valid.'
-},
+    return 'E-mail must be valid.'
+  },
 ]

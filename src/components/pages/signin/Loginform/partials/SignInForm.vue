@@ -54,25 +54,25 @@
 </template>
 
 <script lang="ts" setup>
-  import { emailRules, passwordRules } from '../../../../../utils/formRules'
-  import { validateFormSubmit, submit } from '@/composables/useForms'
-  import type { VuetifyFormElement } from '@/composables/useForms'
+import { emailRules, passwordRules } from '../../../../../utils/formRules'
+import type { VuetifyFormElement } from '@/composables/useForms'
+import { submit, validateFormSubmit } from '@/composables/useForms'
 
-  type SignInFormFields = {
+type SignInFormFields = {
     userName: Ref<string>
     password: Ref<string>
   }
-  const emailAddress: Ref<string> = ref('')
-  const password: Ref<string> = ref('')
+const emailAddress: Ref<string> = ref('')
+const password: Ref<string> = ref('')
 
-  const payload = ref({
-    emailAddress,
-    password
-  }) as unknown as Ref<SignInFormFields> 
+const payload = ref({
+  emailAddress,
+  password
+}) as unknown as Ref<SignInFormFields> 
 
-  const form: Ref<VuetifyFormElement|undefined> = ref()
-  const isLoading: Ref<boolean> = ref(false)
+const form: Ref<VuetifyFormElement|undefined> = ref()
+const isLoading: Ref<boolean> = ref(false)
 
-  const submitLogin = () => submit(isLoading, payload, '/api/v1/login', '/public')
-  const login = () => { validateFormSubmit(form, submitLogin) }
+const submitLogin = () => submit(isLoading, payload, '/api/v1/login', '/public')
+const login = () => { validateFormSubmit(form, submitLogin) }
 </script>

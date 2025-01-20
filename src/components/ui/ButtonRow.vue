@@ -27,11 +27,11 @@
 </template>
 
 <script setup lang="ts">
-  defineProps({
-    href: {
-      type: String,
-      required: false,
-      default: ''
-    }
-  })
+defineProps({
+  href: {
+    type: String,
+    required: false,
+    default: ''
+  }
+})
 </script>

@@ -72,8 +72,8 @@ interface Product {
 
 const products: Product[] = [
   { id: 0, image: '/chat.webp', product: { name: 'Aurorae Chat', technology: 'GPT4ALL', description: 'AI Chatbot which can be used to solve a lot of analytical questions.', useCase: 'Multitalent', pageHref: '#chat' } },
-  { id: 1, image: '/img.webp', product: { name: 'Aurorae Image', technology: 'TensorFlow',  description: 'Image Classifier, could be used for a webshop to handle products more easy and more efficient.', useCase: 'Timesaver', pageHref: '#images'} },
-  { id: 2, image: '', product: { name: 'Dashboard', technology: 'Vuetify',  description: 'All your relevant data and actions in one place beautifully designed for a smooth work session.', useCase: 'Administration', pageHref: '#dashboard'} },
+  { id: 1, image: '/img.webp', product: { name: 'Aurorae Image', technology: 'TensorFlow',  description: 'Image Classifier, could be used for a webshop to handle products more easy and more efficient.', useCase: 'Timesaver', pageHref: '#images' } },
+  { id: 2, image: '', product: { name: 'Dashboard', technology: 'Vuetify',  description: 'All your relevant data and actions in one place beautifully designed for a smooth work session.', useCase: 'Administration', pageHref: '#dashboard' } },
   { id: 3, image: '', product: { name: 'Model Trainer', technology: 'TensorFlow',  description: 'Refine your model to fit your specific needs more or create more models based on your existing ones for more specific use cases.', useCase: 'Refine Chatbot or Image classifier to adjust to your specific needs.', pageHref: '#trainer' } }
 ]
 
