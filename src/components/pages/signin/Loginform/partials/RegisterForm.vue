@@ -61,9 +61,9 @@
 </template>
 
 <script lang="ts" setup>
-import { emailRules, passwordRules, nameRules } from '@/utils/formRules'
-import { validateFormSubmit, submit } from '@/composables/useForms'
+import { emailRules, nameRules, passwordRules } from '@/utils/formRules'
 import type { VuetifyFormElement } from '@/composables/useForms'
+import { submit, validateFormSubmit } from '@/composables/useForms'
 
 type RegisterFormFields = {
     userName: Ref<string>
@@ -80,8 +80,7 @@ const payload = ref({
   emailAddress,
   password,
   passwordRepeat
-}) as unknown as Ref<RegisterFormFields> 
-
+}) as unknown as Ref<RegisterFormFields>
 
 const form: Ref<VuetifyFormElement|undefined> = ref()
 const isLoading: Ref<boolean> = ref(false)  
