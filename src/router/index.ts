@@ -6,9 +6,7 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router/auto'
 import { setupLayouts } from 'virtual:generated-layouts'
-import useAuthenticationStore from '@/stores'
 import { routes } from 'vue-router/auto-routes'
-import { type Store, storeToRefs } from 'pinia'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -33,15 +31,10 @@ router.isReady().then(() => {
   localStorage.removeItem('vuetify:dynamic-reload')
 })
 router.beforeEach((to, from, next) => {
-  // @ts-expect-error - pinia type error
-  const authStore = useAuthenticationStore() as Store<"authentication", { isAuthenticated: boolean }>
-  const { isAuthenticated } = storeToRefs(authStore)
-  isAuthenticated.value = sessionStorage.getItem('isAuthenticated') === 'true'
   if (protectedRoutes.some(route => to.path.startsWith(route))) {
-    if (!isAuthenticated) {
+    if (sessionStorage.getItem('isAuthenticated') === 'true') {
       next({ path: '/signin' })
     } else {
-      debugger
       next()
     }
   } else {
