@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 // Plugins
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
@@ -74,18 +75,6 @@ export default defineConfig({
       sass: {
         api: 'modern-compiler'
       }
-    }
-  },
-  test: {
-    globals: true,
-    environment: 'jsdom',
-    server: {
-      deps: {
-        inline: ['vuetify']
-      }
-    },
-    coverage: {
-      reportsDirectory: './tests/coverage'
     }
   }
 })

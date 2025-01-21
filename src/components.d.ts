@@ -13,7 +13,6 @@ declare module 'vue' {
     AppNavBar: typeof import('./components/layout/AppNavBar.vue')['default']
     BackgroundLogo: typeof import('./components/image/BackgroundLogo.vue')['default']
     ButtonRow: typeof import('./components/ui/ButtonRow.vue')['default']
-    ChipLabel: typeof import('./components/ChipLabel.vue')['default']
     LandingCards: typeof import('./components/pages/landing/LandingCards.vue')['default']
     LandingFeature: typeof import('./components/pages/landing/LandingFeature.vue')['default']
     LandingFeatureLeft: typeof import('./components/pages/landing/LandingFeature/LandingFeatureLeft.vue')['default']

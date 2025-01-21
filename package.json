@@ -37,7 +37,7 @@
     "resize-observer-polyfill": "^1.5.1",
     "sass": "1.77.8",
     "sass-embedded": "^1.77.8",
-    "typescript": "~5.6.3",
+    "typescript": "^5.7.3",
     "unplugin-auto-import": "^0.17.6",
     "unplugin-fonts": "^1.1.1",
     "unplugin-vue-components": "^0.27.2",
@@ -47,7 +47,7 @@
     "vite-plugin-vuetify": "^2.0.3",
     "vitest": "^3.0.2",
     "vue-router": "^4.4.0",
-    "vue-tsc": "^2.1.10"
+    "vue-tsc": "^2.2.0"
   },
   "web-types": "https://raw.githubusercontent.com/JetBrains/web-types/master/schema/web-types.json"
 }
