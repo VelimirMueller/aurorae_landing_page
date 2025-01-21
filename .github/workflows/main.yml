@@ -1,6 +1,6 @@
 name: CI TypeScript Type Check
 
-on: [pull_request]
+on: [push, pull_request]
 
 jobs:
   type-check:
