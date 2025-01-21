@@ -75,5 +75,17 @@ export default defineConfig({
         api: 'modern-compiler'
       }
     }
+  },
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    server: {
+      deps: {
+        inline: ['vuetify']
+      }
+    },
+    coverage: {
+      reportsDirectory: './tests/coverage'
+    }
   }
 })
