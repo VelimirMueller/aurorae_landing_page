@@ -1,0 +1,16 @@
+name: TypeScript Type Check
+
+on: [push, pull_request]
+
+jobs:
+  type-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - run: yarn install
+      - run: yarn type-check
