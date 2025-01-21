@@ -2,7 +2,7 @@ name: test_and_coverage.yml
 on:
  push:
    branches:
-     - master
+     - main
  pull_request:
    types: [opened, synchronize, reopened]
 jobs:
@@ -16,7 +16,7 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Test and coverage
-        run: yarn jest --coverage
+        run: yarn vitest --coverage
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v4
         env:
