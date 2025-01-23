@@ -82,7 +82,10 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     coverage: {
-      reportsDirectory: './src/coverage'
+      reportsDirectory: './src/coverage',
+      reporter: [
+        ['lcov', { 'projectRoot': './src/coverage' }]
+      ]
     },
     server: {
       deps: {
