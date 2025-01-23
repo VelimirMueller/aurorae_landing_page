@@ -4,6 +4,9 @@ import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 import ResizeObserver from 'resize-observer-polyfill'
 
+import LandingPage from '../src/pages/index.vue'
+import { shallowMount } from '@vue/test-utils'
+
 const vuetify = createVuetify({
   components,
   directives
@@ -11,9 +14,15 @@ const vuetify = createVuetify({
 
 global.ResizeObserver = ResizeObserver
 
-test('can mount app', () => {
-  // Assert the rendered text of the component
-  console.log(vuetify)
-  expect(!!vuetify).toBe(true)
-})
+describe('Basic app functionality testing', () => {
+  test('Can mount landing page', () => {
+    const wrapper = shallowMount(LandingPage, {
+      props: {},
+      global: {
+        plugins: [vuetify]
+      }
+    })
 
+    expect(wrapper.html()).toBeDefined()
+  })
+})
