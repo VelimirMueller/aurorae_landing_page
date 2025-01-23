@@ -2,3 +2,4 @@ node_modules
 tests/coverage
 .gitignore
 dist
+src/coverage
