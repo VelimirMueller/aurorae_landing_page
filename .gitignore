@@ -3,3 +3,4 @@ tests/coverage
 .gitignore
 dist
 src/coverage
+build
