@@ -12,3 +12,4 @@ export const useAuthenticationStore = defineStore('authentication', {
     }
   }
 })
+
