@@ -119,8 +119,8 @@
         <template 
           v-for="description in iconDescriptionsDashboard" 
           :key="description.id">
-          <TextIcon 
-            :description="description" 
+          <TextIcon
+            :description="description"
             text-color="white" />
         </template>
       </template>
