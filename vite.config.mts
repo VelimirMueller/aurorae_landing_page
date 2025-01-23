@@ -90,7 +90,7 @@ export default defineConfig({
       reporter: [
         ['lcov', { 'projectRoot': './src/coverage' }]
       ],
-      include: ['src/**/*.ts', 'build/**/*']
+      include: ['src/**/*.ts', 'build/**/*', 'tests/**/*.spec.ts']
     },
     server: {
       deps: {
