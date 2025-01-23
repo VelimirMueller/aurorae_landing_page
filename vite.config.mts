@@ -86,9 +86,9 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     coverage: {
-      reportsDirectory: './src/coverage',
+      reportsDirectory: './coverage',
       reporter: [
-        ['lcov', { 'projectRoot': './src/coverage' }]
+        ['lcov', { 'projectRoot': './' }]
       ],
       include: ['src/**/*.ts', 'build/**/*', 'tests/**/*.spec.ts']
     },
