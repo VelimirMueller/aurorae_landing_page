@@ -68,6 +68,10 @@ export default defineConfig({
       '.vue'
     ]
   },
+  build: {
+    outDir: 'build',
+    emptyOutDir: true
+  },
   server: {
     port: 3000
   },
@@ -85,7 +89,8 @@ export default defineConfig({
       reportsDirectory: './src/coverage',
       reporter: [
         ['lcov', { 'projectRoot': './src/coverage' }]
-      ]
+      ],
+      include: ['src/**/*.ts', 'build/**/*']
     },
     server: {
       deps: {
