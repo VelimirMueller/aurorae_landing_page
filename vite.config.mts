@@ -10,6 +10,7 @@ import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 // Utilities
 import { defineConfig } from 'vite'
 import { fileURLToPath, URL } from 'node:url'
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -76,5 +77,14 @@ export default defineConfig({
         api: 'modern-compiler'
       }
     }
+  },
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    server: {
+      deps: {
+        inline: ['vuetify']
+      }
+    }
   }
-})
+} as ReturnType<typeof defineConfig>) // workaround to keep the type checker happy since it doesn't like the test configuration
