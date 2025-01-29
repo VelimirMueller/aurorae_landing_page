@@ -4,3 +4,4 @@ tests/coverage
 dist
 src/coverage
 build
+coverage
