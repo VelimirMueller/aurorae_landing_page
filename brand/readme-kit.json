@@ -1,0 +1,69 @@
+{
+  "group": "flagship",
+  "version": "v2",
+  "dividers": [
+    {"key": "what", "index": "01", "title": "WHAT IT DOES", "caption": "THE PART WITH THE PIXELS.", "art": "strip-flagship-1"},
+    {"key": "start", "index": "02", "title": "QUICK START", "caption": "NOTHING RUNS HERE. YET.", "art": "strip-flagship-2"},
+    {"key": "how", "index": "03", "title": "HOW IT WORKS", "caption": "THE PLUMBING BEHIND THE PAINT.", "art": "strip-flagship-3"},
+    {"key": "usage", "index": "04", "title": "USAGE", "caption": "THE FINE PRINT, WITH LINKS.", "art": "strip-flagship-4"},
+    {"key": "status", "index": "05", "title": "STATUS", "caption": "SHORT LIST. HONEST LIST.", "art": "strip-flagship-5"}
+  ],
+  "panels": [
+    {
+      "key": "stats",
+      "type": "stats",
+      "title": "STUDIO IN NUMBERS",
+      "items": [
+        {"value": "3", "label": "SURFACES: SITE, BUILDER, ADMIN"},
+        {"value": "2", "label": "LANGUAGES: DE + EN"},
+        {"value": "2.2", "label": "WCAG LEVEL, AA"},
+        {"value": "0", "label": "LINES OF APP CODE (S-E0)"}
+      ]
+    },
+    {
+      "key": "features",
+      "type": "cards",
+      "title": "THREE SURFACES, ONE APP",
+      "items": [
+        {"title": "PUBLIC SITE", "text": "Prerendered pages in German and English. Dark mode follows the system."},
+        {"title": "PAGE BUILDER", "text": "Landing pages without code. Widget settings with a live preview."},
+        {"title": "ADMIN", "text": "Users and roles, AI settings, consent per German GDPR law. Health arrives live over SSE."}
+      ]
+    },
+    {
+      "key": "start",
+      "type": "terminal",
+      "title": "QUICK START",
+      "lines": [
+        "$ gh repo clone VelimirMueller/synthwerk-studio",
+        "$ cd synthwerk-studio",
+        "$ ls",
+        "LICENSE  README.md",
+        "# nothing runs here yet. epic E4 is the rewrite."
+      ]
+    },
+    {
+      "key": "flow",
+      "type": "flow",
+      "title": "ONE BROWSER, FOUR CALLS",
+      "nodes": [
+        {"title": "BROWSER", "sub": "public site, builder, admin"},
+        {"title": "STUDIO", "sub": "this repo, Nuxt 4", "hot": true},
+        {"title": "SERVICES", "sub": "identity, llm"},
+        {"title": "PULSE", "sub": "health over SSE"}
+      ],
+      "caption": "Studio calls identity and llm. Pulse streams health back over SSE. None of it runs yet."
+    },
+    {
+      "key": "status",
+      "type": "status",
+      "title": "WHAT WORKS TODAY",
+      "rows": [
+        {"label": "Legacy removal (S-E0)", "value": "done", "state": "ok"},
+        {"label": "Rewrite", "value": "epic E4 Studio core", "state": "wip"},
+        {"label": "Site, builder, admin", "value": "planned in E4", "state": "planned"},
+        {"label": "Old Vuetify UI", "value": "tag legacy-final", "state": "off"}
+      ]
+    }
+  ]
+}
