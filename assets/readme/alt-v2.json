@@ -1,0 +1,17 @@
+{
+  "divider-what-v2.svg": "01 WHAT IT DOES. THE PART WITH THE PIXELS.",
+  "divider-start-v2.svg": "02 QUICK START. NOTHING RUNS HERE. YET.",
+  "divider-how-v2.svg": "03 HOW IT WORKS. THE PLUMBING BEHIND THE PAINT.",
+  "divider-usage-v2.svg": "04 USAGE. THE FINE PRINT, WITH LINKS.",
+  "divider-status-v2.svg": "05 STATUS. SHORT LIST. HONEST LIST.",
+  "stats-v2-dark.svg": "3 SURFACES: SITE, BUILDER, ADMIN. 2 LANGUAGES: DE + EN. 2.2 WCAG LEVEL, AA. 0 LINES OF APP CODE (S-E0)",
+  "stats-v2-light.svg": "3 SURFACES: SITE, BUILDER, ADMIN. 2 LANGUAGES: DE + EN. 2.2 WCAG LEVEL, AA. 0 LINES OF APP CODE (S-E0)",
+  "features-v2-dark.svg": "PUBLIC SITE: Prerendered pages in German and English. Dark mode follows the system. PAGE BUILDER: Landing pages without code. Widget settings with a live preview. ADMIN: Users and roles, AI settings, consent per German GDPR law. Health arrives live over SSE",
+  "features-v2-light.svg": "PUBLIC SITE: Prerendered pages in German and English. Dark mode follows the system. PAGE BUILDER: Landing pages without code. Widget settings with a live preview. ADMIN: Users and roles, AI settings, consent per German GDPR law. Health arrives live over SSE",
+  "start-v2-dark.svg": "Terminal: $ gh repo clone VelimirMueller/synthwerk-studio | $ cd synthwerk-studio | $ ls | LICENSE  README.md | # nothing runs here yet. epic E4 is the rewrite.",
+  "start-v2-light.svg": "Terminal: $ gh repo clone VelimirMueller/synthwerk-studio | $ cd synthwerk-studio | $ ls | LICENSE  README.md | # nothing runs here yet. epic E4 is the rewrite.",
+  "flow-v2-dark.svg": "BROWSER -> STUDIO -> SERVICES -> PULSE. Studio calls identity and llm. Pulse streams health back over SSE. None of it runs yet.",
+  "flow-v2-light.svg": "BROWSER -> STUDIO -> SERVICES -> PULSE. Studio calls identity and llm. Pulse streams health back over SSE. None of it runs yet.",
+  "status-v2-dark.svg": "Legacy removal (S-E0): done. Rewrite: epic E4 Studio core. Site, builder, admin: planned in E4. Old Vuetify UI: tag legacy-final",
+  "status-v2-light.svg": "Legacy removal (S-E0): done. Rewrite: epic E4 Studio core. Site, builder, admin: planned in E4. Old Vuetify UI: tag legacy-final"
+}
